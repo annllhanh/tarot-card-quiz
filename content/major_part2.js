@@ -13,7 +13,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world operates on cause and effect. Logically, you see every action producing an inevitable consequence. Emotionally, you carry a deep need for things to be fair.',
     upright:{brief:'Truth and accountability. The consequences of past choices arrive.',detail:'Justice demands honest accounting. This card appears when the results of past decisions are coming due, when a legal or ethical matter requires resolution, or when you must make a choice based on principle rather than preference. The sword cuts through illusion; the scales weigh without bias.',advice:'Be scrupulously honest with yourself and others. Accept responsibility for your part in the current situation. The challenge is releasing attachment to the outcome you want in favor of the outcome that is fair. The caution is against using "justice" as a mask for vengeance.'},
     reversed:{brief:'Dishonesty, avoidance of accountability, or unfair judgment.',detail:'Reversed, Justice is blindfolded rather than clear-eyed. There is dishonesty, either yours or someone else\'s. Accountability is being dodged, the scales are rigged, or judgment is being rendered without all the facts.',advice:'If you are avoiding consequences, they will find you eventually. Better to face them now. If you feel judged unfairly, gather your evidence and present it calmly. The caution is against self-righteousness: being wronged does not make you right about everything.'},
-    scores:{fire:1,water:1,air:4,earth:3,spirit:2,beginning:0,growth:2,mastery:4,completion:3}},
+    scores:{spirit:10, m11:10}},
 
   { id:'m12', name:'The Hanged Man', num:12, suit:'major',
     keywords:['surrender','new perspective','pause','sacrifice'],
@@ -28,7 +28,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world looks different when viewed from an unexpected angle. Logically, you recognize that your current framework may be incomplete. Emotionally, you feel the strange peace that comes with surrender.',
     upright:{brief:'Surrender the need to act. See from a completely new angle.',detail:'The Hanged Man is not a victim. He chose this suspension. By voluntarily releasing control, he sees the world from an inverted perspective that reveals truths invisible from the ground. This card appears when pushing harder will not help, when the answer requires you to stop, invert your assumptions, and see differently.',advice:'Stop trying to fix it. Let go of the timeline. Something valuable is gestating in this pause, but it requires your willingness to be uncomfortable. The challenge is tolerating the uncertainty. The caution is against confusing genuine surrender with passive avoidance.'},
     reversed:{brief:'Stalling, martyrdom, or refusing to see differently.',detail:'Reversed, The Hanged Man is stuck rather than surrendered. You may be resisting the necessary pause, insisting on action when stillness is required, or performing sacrifice for attention rather than insight.',advice:'Ask whether you are truly letting go or merely stuck. If you are resisting the pause, something in you knows that the shift in perspective will change everything, and that scares you. Let it.'},
-    scores:{fire:0,water:3,air:2,earth:0,spirit:5,beginning:0,growth:3,mastery:2,completion:3}},
+    scores:{spirit:10, m12:10}},
 
   { id:'m13', name:'Death', num:13, suit:'major',
     keywords:['transformation','ending','release','rebirth'],
@@ -43,7 +43,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is in constant transformation. Logically, you recognize that nothing is permanent. Emotionally, you feel the grief of endings and the quiet stirring of what comes next.',
     upright:{brief:'Something must end completely for transformation to begin.',detail:'Death does not mean physical death. It is the card of absolute transformation, the kind that cannot be undone or reversed. A chapter is closing. A relationship, identity, belief system, or way of life has reached its conclusion. The white rose on the banner promises that from this ending, new life will emerge, but only if you let the old form die completely.',advice:'Let it go. Do not try to resurrect what has ended. Grieve fully, then release. The challenge is accepting that you cannot take the old self into the new chapter. The caution is against premature closure: let the process complete before rushing into what is next.'},
     reversed:{brief:'Resistance to necessary change or fear of letting go.',detail:'Reversed, Death signals that you are clinging to something that has already ended. The transformation is happening whether you cooperate or not, but your resistance is making it slower and more painful.',advice:'What are you holding onto that has already died? A relationship, an identity, a belief? Your grip is not keeping it alive. It is keeping you trapped. Release is not betrayal. It is survival.'},
-    scores:{fire:1,water:3,air:1,earth:0,spirit:4,beginning:3,growth:1,mastery:1,completion:5}},
+    scores:{spirit:10, m13:10}},
 
   { id:'m14', name:'Temperance', num:14, suit:'major',
     keywords:['balance','moderation','patience','alchemy'],
@@ -58,7 +58,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is best navigated through balance and patience. Logically, you understand that extremes are unsustainable. Emotionally, you seek the calm center between opposing pulls.',
     upright:{brief:'Blend opposites with patience. The middle path holds the answer.',detail:'Temperance is the art of alchemy. The angel pours water between cups without spilling a drop, demonstrating that opposing forces can be combined into something entirely new. This card appears when moderation, patience, and the careful integration of different parts of your life are needed.',advice:'Do not rush. The blending of opposites takes time and precision. Find the middle path between extremes. The challenge is patience when you want immediate resolution. The caution is against mistaking compromise for integration: true temperance creates something new, not a watered-down version of two things.'},
     reversed:{brief:'Imbalance, excess, or forced incompatibility.',detail:'Reversed, Temperance loses its balance. You may be living in excess, burning out from overwork, or trying to force two incompatible elements to merge. The flow between the cups has been disrupted.',advice:'Where in your life are you out of balance? Something is taking too much of your energy while something else is being starved. Restore the flow. The caution is against pushing through imbalance with willpower. That is The Chariot, not Temperance.'},
-    scores:{fire:1,water:2,air:2,earth:2,spirit:3,beginning:0,growth:3,mastery:3,completion:2}},
+    scores:{spirit:10, m14:10}},
 
   { id:'m15', name:'The Devil', num:15, suit:'major',
     keywords:['shadow','bondage','materialism','temptation'],
@@ -73,7 +73,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world tempts with quick fixes and comfortable lies. Logically, you can see the trap. Emotionally, the pull of habit, addiction, or unhealthy attachment is powerful.',
     upright:{brief:'Confront the chains you have chosen. They can be removed.',detail:'The Devil is the most misunderstood card in the deck. It is not evil. It is awareness of the shadow. The two figures chained to the pedestal could slip their chains off at any time, but they do not, because the bondage serves some hidden purpose. This card appears when addiction, toxic attachment, materialism, or self-destructive patterns need to be honestly acknowledged.',advice:'Name the pattern. Addiction, codependency, workaholism, self-sabotage. You cannot change what you will not see. The challenge is honesty about what you are getting from the pattern. The caution is against projecting the shadow onto others: the devil you need to face is your own.'},
     reversed:{brief:'Breaking free from bondage or deeper descent into denial.',detail:'Reversed, The Devil signals either a breakthrough, the moment you finally see the chains and choose to remove them, or a deeper descent into denial where you insist you are free while tightening your own bonds.',advice:'If you are breaking free, do not look back. If you are still denying, ask yourself: what would happen if I admitted the truth? The answer is usually less terrifying than the question.'},
-    scores:{fire:2,water:1,air:2,earth:3,spirit:2,beginning:0,growth:3,mastery:2,completion:3}},
+    scores:{spirit:10, m15:10}},
 
   { id:'m16', name:'The Tower', num:16, suit:'major',
     keywords:['upheaval','revelation','sudden change','liberation'],
@@ -88,7 +88,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is not what you thought it was. Logically, you recognize that the collapse was inevitable. Emotionally, you are in shock, but beneath the shock, there may be relief.',
     upright:{brief:'A structure built on false foundations collapses. Truth liberates.',detail:'The Tower is the lightning bolt of truth that destroys everything built on lies, denial, or shaky foundations. It is sudden, shocking, and cannot be prevented. But look closely: the lightning also illuminates. In the flash of destruction, you see clearly what was hidden. This is not punishment. It is liberation from a prison you did not know you were in.',advice:'Do not try to rebuild what has fallen. It fell because it was not structurally sound. Let the rubble settle before you start again. The challenge is trusting that this destruction serves a purpose. The caution is against clinging to the debris.'},
     reversed:{brief:'Delayed inevitable collapse or internal upheaval.',detail:'Reversed, The Tower is shaking but has not yet fallen. You may be aware that a collapse is coming but are trying to delay it, or the upheaval is internal rather than external, a slow crumbling of beliefs rather than a dramatic crisis.',advice:'If you know the structure is unstable, take it down yourself rather than waiting for lightning. Controlled demolition is less traumatic than unexpected collapse.'},
-    scores:{fire:3,water:1,air:2,earth:1,spirit:3,beginning:4,growth:1,mastery:0,completion:4}},
+    scores:{spirit:10, m16:10}},
 
   { id:'m17', name:'The Star', num:17, suit:'major',
     keywords:['hope','healing','inspiration','serenity'],
@@ -103,7 +103,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is healing. Logically, you see that destruction cleared the way for something better. Emotionally, you feel a quiet faith that you had forgotten was possible.',
     upright:{brief:'After the storm, healing arrives. Hope is not naive; it is earned.',detail:'The Star appears after The Tower to say: you survived. Now heal. The woman pours water with both hands, one stream into the pool of the unconscious, one onto the earth of the material world. She is healing both inner and outer reality simultaneously. This card is the most gentle in the deck.',advice:'Allow yourself to be vulnerable. Receive the healing that is being offered. Share your gifts without calculating the return. The challenge is trusting hope after devastation. The caution is against rushing the healing to get to the next thing. Stay with the peace.'},
     reversed:{brief:'Loss of faith or disconnection from hope.',detail:'Reversed, The Star dims. You may have lost faith after too many disappointments, or you may be refusing the healing process, pushing through pain rather than allowing it to be tended.',advice:'If hope feels impossible, start smaller. One small act of beauty. One honest moment. Hope is not a grand gesture; it is the quiet choice to remain open. The caution is against cynicism disguised as realism.'},
-    scores:{fire:0,water:3,air:1,earth:1,spirit:5,beginning:2,growth:2,mastery:2,completion:3}},
+    scores:{spirit:10, m17:10}},
 
   { id:'m18', name:'The Moon', num:18, suit:'major',
     keywords:['illusion','fear','the unconscious','intuition'],
@@ -118,7 +118,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is not what it appears to be. Logically, you know you cannot trust your perceptions right now. Emotionally, you feel the pull of deep fears and ancient patterns rising from the unconscious.',
     upright:{brief:'Navigate the unconscious. Not everything you see is real.',detail:'The Moon illuminates a deceptive landscape. Shadows move, shapes shift, and the path forward is unclear. This card appears when anxiety, confusion, illusion, or unconscious fears are distorting your perception. The challenge is not to eliminate the uncertainty but to walk through it without losing yourself.',advice:'Do not make major decisions in moonlight. Wait for dawn. Pay attention to dreams and recurring feelings; they carry information, but they are not literal. The challenge is maintaining your center when everything feels unstable. The caution is against believing your fears are facts.'},
     reversed:{brief:'Illusions clearing or repressed fears breaking through.',detail:'Reversed, The Moon may indicate that confusion is lifting and you are beginning to see clearly. Alternatively, repressed fears and anxieties may be erupting into consciousness, demanding attention.',advice:'If clarity is arriving, trust it. If fears are surfacing, let them come. What rises from the unconscious needs to be seen, not shoved back down. The caution is against overreacting to what surfaces: acknowledge it, do not obey it blindly.'},
-    scores:{fire:0,water:4,air:2,earth:0,spirit:4,beginning:1,growth:2,mastery:2,completion:3}},
+    scores:{spirit:10, m18:10}},
 
   { id:'m19', name:'The Sun', num:19, suit:'major',
     keywords:['joy','success','vitality','clarity'],
@@ -133,7 +133,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is bright and good. Logically, you see things as they are, without distortion. Emotionally, you feel genuine happiness and gratitude.',
     upright:{brief:'Pure joy and clarity. Everything is illuminated.',detail:'The Sun is the most positive card in the deck. There is no hidden meaning, no warning, no complexity. The Sun shines and everything it touches is warm, clear, and alive. This card appears when success, happiness, vitality, and truth are radiating through your life.',advice:'Celebrate. Share your joy. Let others see your authentic self without dimming your light for their comfort. The challenge is accepting that you deserve this. The caution is slight: do not forget that The Moon exists. Joy is real, but it is not permanent.'},
     reversed:{brief:'Dimmed joy or difficulty accepting happiness.',detail:'Reversed, The Sun still shines, but clouds partially obscure it. Joy is present but you are struggling to feel it, perhaps due to depression, self-doubt, or the belief that happiness cannot last.',advice:'The light is still there. If you cannot feel it, ask what is blocking your access. Childhood wounds around worthiness often surface here. You are allowed to be happy.'},
-    scores:{fire:3,water:1,air:1,earth:2,spirit:3,beginning:2,growth:2,mastery:2,completion:3}},
+    scores:{spirit:10, m19:10}},
 
   { id:'m20', name:'Judgement', num:20, suit:'major',
     keywords:['reckoning','renewal','calling','absolution'],
@@ -148,7 +148,7 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is calling you to a higher purpose. Logically, you see the need for honest self-assessment. Emotionally, you feel the urgency of a calling that will not wait.',
     upright:{brief:'Answer the call. Rise to who you are meant to become.',detail:'Judgement is the moment of reckoning, not punishment, but honest evaluation. The trumpet sounds and the dead rise, not to be judged by an external authority, but to judge themselves, to see clearly what they have done and who they have become, and to choose consciously what comes next.',advice:'Respond to the calling. Forgive yourself for past mistakes. Let the person you have become step forward without dragging the guilt of who you used to be. The challenge is radical self-honesty. The caution is against judging others while avoiding your own reckoning.'},
     reversed:{brief:'Self-doubt blocking renewal or refusal to hear the call.',detail:'Reversed, Judgement indicates that you are hearing the call but refusing to answer, either because you do not believe you are worthy or because the answer demands changes you are afraid to make.',advice:'The trumpet is sounding for you. Ignoring it will not silence it. Whatever you are afraid to face about yourself, the facing of it is the liberation. Stop waiting to feel ready.'},
-    scores:{fire:2,water:2,air:2,earth:1,spirit:4,beginning:3,growth:1,mastery:2,completion:4}},
+    scores:{spirit:10, m20:10}},
 
   { id:'m21', name:'The World', num:21, suit:'major',
     keywords:['completion','wholeness','integration','accomplishment'],
@@ -163,5 +163,5 @@ export const MAJOR_ARCANA_P2 = [
     worldOutlook:'The world is a dance and you are finally dancing in rhythm with it. Logically, you see the interconnection of all things. Emotionally, you feel a deep, earned peace.',
     upright:{brief:'Completion. You have arrived. The cycle is fulfilled.',detail:'The World dancer floats in the center of a laurel wreath, the symbol of victory. In her hands she holds two wands, representing the balance of active and receptive forces. This is the card of true accomplishment, not the kind that comes from ticking a box, but the kind that comes from integrating every lesson of the journey. You are whole.',advice:'Celebrate this completion. Allow yourself to feel the fullness of what you have achieved and who you have become. Then prepare for the next cycle, because The Fool always steps off the cliff again. The challenge is avoiding the temptation to cling to this summit. The caution is against believing the journey is over. Completion is a doorway, not a destination.'},
     reversed:{brief:'Near completion or reluctance to close a chapter.',detail:'Reversed, The World indicates that you are almost there but something remains unfinished. A loose end, an unlearned lesson, or a reluctance to step into the completion that awaits you. You may be dragging your feet because finishing means beginning again.',advice:'What is the final piece? It is usually something small that you have been avoiding. Complete it. Close the chapter. The next one cannot begin until you do.'},
-    scores:{fire:1,water:2,air:2,earth:3,spirit:4,beginning:2,growth:0,mastery:3,completion:5}}
+    scores:{spirit:10, m21:10}}
 ];

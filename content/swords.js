@@ -14,7 +14,7 @@ export const SWORDS = [
     worldOutlook:'The world is suddenly clear. A veil has been removed and you can see what was hidden.',
     upright:{brief:'A breakthrough of clarity. The truth cuts through everything.',detail:'The Ace of Swords shows a hand emerging from clouds gripping a crowned sword wreathed in laurel and olive. This is the moment of absolute mental clarity: a new idea, a revelation, or a truth that cannot be unseen.',advice:'Act on the clarity while it is fresh. Speak the truth even if your voice shakes. The challenge is following through on what you now see clearly. The caution is against weaponizing truth. The sword cuts both ways.'},
     reversed:{brief:'Confusion, misinformation, or truth used as a weapon.',detail:'Reversed, the sword is dulled or wielded destructively. Mental clarity is blocked, or clarity is being used to hurt rather than illuminate.',advice:'If confused, simplify. Strip away everything that is not essential until the truth becomes visible. If you are using truth to wound, ask whose pain you are really expressing.'},
-    scores:{fire:1,water:0,air:5,earth:0,spirit:2,beginning:5,growth:1,mastery:1,completion:0}},
+    scores:{air:10, n1:10}},
 
   { id:'s2', name:'Two of Swords', num:2, suit:EL, keywords:['indecision','stalemate','denial','blocked emotion'],
     symbol:{layers:['outerCircle','cross','dottedInner','crescent','dot']},
@@ -27,7 +27,7 @@ export const SWORDS = [
     worldOutlook:'The world presents impossible choices. Logically, both options seem equally valid. Emotionally, you have blocked your feelings to avoid the discomfort of choosing.',
     upright:{brief:'A decision awaits, but you are blocking yourself from making it.',detail:'The Two of Swords shows a blindfolded figure holding two crossed swords, the ocean behind her. She has deliberately blocked her sight, refusing to see the situation clearly because clarity would force a painful choice.',advice:'Remove the blindfold. You already know what you need to do; you are avoiding it because it will hurt. The challenge is accepting that some decisions have no pain-free option. The caution is against mistaking avoidance for neutrality.'},
     reversed:{brief:'Information overload or a forced decision.',detail:'Reversed, the blindfold slips. You are suddenly flooded with information, or external circumstances are forcing the choice you tried to avoid.',advice:'If information is overwhelming, filter for relevance. If the choice is being forced, trust that the universe is removing your ability to stall for a reason.'},
-    scores:{fire:0,water:1,air:4,earth:1,spirit:1,beginning:1,growth:2,mastery:2,completion:1}},
+    scores:{air:10, n2:10}},
 
   { id:'s3', name:'Three of Swords', num:3, suit:EL, keywords:['heartbreak','sorrow','painful truth','grief'],
     symbol:{layers:['outerCircle','triDown','dottedInner','dot'],rotation:180},
@@ -40,7 +40,7 @@ export const SWORDS = [
     worldOutlook:'The world has delivered a painful truth. Logically, you understand why. Emotionally, understanding does not ease the pain.',
     upright:{brief:'A painful truth pierces the heart. Feel it fully.',detail:'The Three of Swords shows three swords piercing a red heart against a stormy sky. This is the card of heartbreak, betrayal, or painful truth. The wound is real and it needs to be felt, not intellectualized.',advice:'Do not bypass the grief with logic. "I understand why it happened" is not the same as healing from it. Feel the pain. The challenge is not hardening your heart in response. The caution is against using pain as justification for cruelty.'},
     reversed:{brief:'Beginning to heal or repressing pain that needs expression.',detail:'Reversed, the swords are slowly withdrawing. Healing begins, or the pain has been pushed so deep it festers.',advice:'If healing, be patient with yourself. If repressing, let it out. Unfelt pain becomes bitterness.'},
-    scores:{fire:0,water:2,air:4,earth:0,spirit:1,beginning:0,growth:2,mastery:1,completion:3}},
+    scores:{air:10, n3:10}},
 
   { id:'s4', name:'Four of Swords', num:4, suit:EL, keywords:['rest','recovery','contemplation','solitude'],
     symbol:{layers:['outerCircle','square','dottedInner','cross','dot']},
@@ -53,7 +53,7 @@ export const SWORDS = [
     worldOutlook:'The world can wait. Logically, you know rest is not laziness. Emotionally, you need silence.',
     upright:{brief:'Rest. Recovery is not optional; it is the strategy.',detail:'The Four of Swords shows a knight lying in repose within a church, three swords on the wall, one beneath him. This is sacred rest, not laziness. The mind has been working overtime and needs to be still.',advice:'Step away. Meditate, sleep, or simply stop thinking for a while. The challenge is allowing yourself to rest in a culture that equates busyness with worth. The caution is against resting so long that rest becomes avoidance.'},
     reversed:{brief:'Restlessness, burnout, or forced back into action too soon.',detail:'Reversed, rest is either impossible or has been cut short. You are being pushed back into the fray before you are ready.',advice:'If you cannot rest, find micro-moments of stillness. If you are being forced back prematurely, set whatever boundaries you can. You will break if you do not bend.'},
-    scores:{fire:0,water:1,air:3,earth:2,spirit:2,beginning:0,growth:1,mastery:3,completion:2}},
+    scores:{air:10, n4:10}},
 
   { id:'s5', name:'Five of Swords', num:5, suit:EL, keywords:['defeat','conflict','hollow victory','betrayal'],
     symbol:{layers:['outerCircle','star5','dottedInner','crossSmall'],rotation:180},
@@ -66,7 +66,7 @@ export const SWORDS = [
     worldOutlook:'The world rewards winners, but this victory tastes like ash. Logically, you won. Emotionally, something is broken.',
     upright:{brief:'A hollow victory or a conflict where everyone loses.',detail:'The Five of Swords shows a smirking figure collecting swords from two retreating opponents. He has won, but at what cost? This is the card of arguments won at the expense of relationships, battles that leave all parties diminished.',advice:'Ask yourself: what did this victory actually cost? If you won, was it worth the damage? If you lost, is the defeat truly as devastating as it feels? The challenge is choosing between being right and being at peace. The caution is against punishing others for your own frustration.'},
     reversed:{brief:'Reconciliation after conflict or walking away from a fight.',detail:'Reversed, the battle ends through withdrawal or reconciliation. You may be choosing peace over winning.',advice:'If reconciliation is possible, approach it with humility. If walking away is the only option, do so without looking back.'},
-    scores:{fire:1,water:0,air:4,earth:1,spirit:0,beginning:0,growth:3,mastery:2,completion:2}},
+    scores:{air:10, n5:10}},
 
   { id:'s6', name:'Six of Swords', num:6, suit:EL, keywords:['transition','moving on','healing journey','mental relief'],
     symbol:{layers:['outerCircle','wave','dottedRing','triUp','dot'],dots:6},
@@ -79,7 +79,7 @@ export const SWORDS = [
     worldOutlook:'The world is moving from worse to better. Logically, you see the path ahead. Emotionally, you carry grief but also quiet hope.',
     upright:{brief:'You are moving toward calmer waters. The transition is underway.',detail:'The Six of Swords shows a ferryman guiding a woman and child across choppy waters toward calm. Six swords stand in the bow. This is the card of necessary transitions, moving from difficulty toward peace. The journey is not over, but the worst is behind you.',advice:'Keep moving forward. Do not go back to retrieve what you left. The challenge is patience during the crossing. The caution is against pretending the journey is over when you are still on the water.'},
     reversed:{brief:'Stuck in transition or return to troubled waters.',detail:'Reversed, the boat is stalled or circling back. You may be unable to leave, or you may be returning to a situation you already escaped.',advice:'If stuck, ask what is anchoring you to the shore you are leaving. If returning, examine whether you are going back for something genuine or out of habit.'},
-    scores:{fire:0,water:2,air:3,earth:1,spirit:1,beginning:1,growth:2,mastery:2,completion:3}},
+    scores:{air:10, n6:10}},
 
   { id:'s7', name:'Seven of Swords', num:7, suit:EL, keywords:['strategy','deception','stealth','shortcuts'],
     symbol:{layers:['outerCircle','star5','dottedInner','crossSmall','dot'],rotation:36},
@@ -92,7 +92,7 @@ export const SWORDS = [
     worldOutlook:'The world rewards cleverness. Logically, efficiency justifies the approach. Emotionally, something feels off.',
     upright:{brief:'Strategy or deception. Are you being clever or dishonest?',detail:'The Seven of Swords shows a figure sneaking away from a camp carrying five swords, two left behind. He may be a thief, a spy, or a strategist. This card asks you to examine whether your approach is genuinely strategic or avoidant.',advice:'If strategy is needed, use it with integrity. If you are cutting corners or avoiding difficult conversations, ask what you are afraid of facing directly. The challenge is the line between smart and dishonest. The caution is against self-deception: the person most easily fooled by your rationalizations is you.'},
     reversed:{brief:'Getting caught or coming clean.',detail:'Reversed, the deception is exposed, or you are choosing to be honest after a period of evasion.',advice:'If caught, own it completely. Partial confessions make things worse. If you are coming clean voluntarily, do so fully.'},
-    scores:{fire:0,water:0,air:5,earth:1,spirit:0,beginning:0,growth:3,mastery:3,completion:0}},
+    scores:{air:10, n7:10}},
 
   { id:'s8', name:'Eight of Swords', num:8, suit:EL, keywords:['restriction','imprisonment','self-limitation','victim mentality'],
     symbol:{layers:['outerCircle','dottedInner','cross','rays','dot'],rayCount:8},
@@ -105,7 +105,7 @@ export const SWORDS = [
     worldOutlook:'The world is closing in. Logically, you see no exit. Emotionally, you feel helpless and afraid. But look again: are the walls real?',
     upright:{brief:'You feel trapped, but the cage is your own creation.',detail:'The Eight of Swords shows a blindfolded, loosely bound figure surrounded by eight swords. Water pools at her feet. She could remove the blindfold. She could step between the swords. But she believes she is trapped, and so she is.',advice:'Remove the blindfold. Question the beliefs that tell you there is no way out. The challenge is recognizing that your sense of helplessness is a thought, not a fact. The caution is against waiting for rescue. No one can remove a blindfold you are choosing to wear.'},
     reversed:{brief:'Breaking free from self-imposed limitations or deeper entrapment.',detail:'Reversed, the blindfold is slipping. You are beginning to see that the prison was constructed by your own mind.',advice:'Take the first step, even if it is tiny. Freedom arrives through action, not through more thinking about action.'},
-    scores:{fire:0,water:1,air:4,earth:0,spirit:1,beginning:0,growth:2,mastery:2,completion:2}},
+    scores:{air:10, n8:10}},
 
   { id:'s9', name:'Nine of Swords', num:9, suit:EL, keywords:['anxiety','nightmares','worry','mental anguish'],
     symbol:{layers:['outerCircle','dottedInner','rays','crossSmall','dot'],rayCount:9},
@@ -118,7 +118,7 @@ export const SWORDS = [
     worldOutlook:'The world is a source of threat. Logically, you know your fears may be exaggerated. Emotionally, that knowledge does not help at 3 AM.',
     upright:{brief:'Anxiety and worry are consuming you. The fear is worse than reality.',detail:'The Nine of Swords shows a figure sitting up in bed, face in hands, nine swords hanging on the wall behind them. This is the card of anxiety, insomnia, guilt, and the spiral of catastrophic thinking. The suffering is real, but it is being amplified by the mind.',advice:'Get out of your head. Talk to someone. Write down the fears and examine them in daylight. The challenge is breaking the spiral. The caution is against normalizing this level of anxiety as "just how I am." You deserve help.'},
     reversed:{brief:'Peak anxiety breaking or reaching out for help.',detail:'Reversed, the nightmare reaches its climax and begins to fade, or you are finally reaching out for the help you need.',advice:'If the worst has passed, be gentle with yourself as you recover. If you are seeking help, follow through. The first step is the hardest.'},
-    scores:{fire:0,water:2,air:4,earth:0,spirit:0,beginning:0,growth:2,mastery:1,completion:3}},
+    scores:{air:10, n9:10}},
 
   { id:'s10', name:'Ten of Swords', num:10, suit:EL, keywords:['rock bottom','ending','betrayal','dawn'],
     symbol:{layers:['outerCircle','cross','rays','dottedRing','triDown','dot'],rayCount:10,rotation:180},
@@ -131,7 +131,7 @@ export const SWORDS = [
     worldOutlook:'The world has done its worst. Logically, it can only get better from here. Emotionally, numbness may precede recovery.',
     upright:{brief:'Rock bottom. But the dawn is visible on the horizon.',detail:'The Ten of Swords shows a figure lying face down with ten swords in their back, but golden light breaks at the horizon. This is as bad as it gets, and that is actually the good news. You have hit bottom, which means the only direction now is up.',advice:'Let this be the ending. Do not resurrect what has been so thoroughly destroyed. The challenge is surrendering to the fall rather than fighting it on the way down. The caution is against dramatic suffering. The pain is real, but martyrdom is a choice.'},
     reversed:{brief:'Beginning to rise from the worst or prolonging an ending.',detail:'Reversed, you are either pulling the swords out and beginning to rise, or you are refusing to let the ending be final.',advice:'If you are rising, go slowly. If you are prolonging the pain, ask what you gain from staying down. Sometimes the ground is comfortable because you are afraid of standing.'},
-    scores:{fire:0,water:1,air:4,earth:0,spirit:1,beginning:2,growth:0,mastery:0,completion:5}},
+    scores:{air:10, n10:10}},
 
   { id:'s11', name:'Page of Swords', num:11, suit:EL, keywords:['curiosity','new ideas','vigilance','communication'],
     symbol:{layers:['outerCircle','triUp','starSmall','dot']},
@@ -144,7 +144,7 @@ export const SWORDS = [
     worldOutlook:'The world is full of information waiting to be gathered and analyzed.',
     upright:{brief:'A sharp new idea or message arrives. Stay alert.',detail:'The Page of Swords stands on a windswept hill, sword raised, scanning the horizon. He is alert, curious, and mentally agile. This card brings new ideas, messages, or the beginning of an intellectual pursuit.',advice:'Follow the curiosity. Ask the questions. The challenge is depth: do not skim the surface of many ideas at the expense of mastering one. The caution is against using your sharp tongue to wound.'},
     reversed:{brief:'Gossip, scattered thinking, or all talk, no follow-through.',detail:'Reversed, the Page uses his sharp mind for gossip, deception, or mental games rather than genuine inquiry.',advice:'Direct your mental energy toward creation, not destruction. A sharp mind without purpose becomes a weapon against yourself.'},
-    scores:{fire:1,water:0,air:4,earth:1,spirit:1,beginning:4,growth:2,mastery:0,completion:0}},
+    scores:{air:10, page:10}},
 
   { id:'s12', name:'Knight of Swords', num:12, suit:EL, keywords:['ambition','speed','directness','charged forward'],
     symbol:{layers:['outerCircle','triUp','rays','diamond','dot'],rayCount:6},
@@ -157,7 +157,7 @@ export const SWORDS = [
     worldOutlook:'The world responds to decisive action and sharp communication.',
     upright:{brief:'Charge forward with conviction. Speed and clarity are your allies.',detail:'The Knight of Swords gallops at full speed, sword raised, cutting through the wind. He is brilliant, fast, and unstoppable. This card appears when rapid, decisive action based on clear thinking is required.',advice:'Move quickly and speak directly. The challenge is distinguishing conviction from stubbornness. The caution is against leaving a trail of wounded people behind you. Speed without compassion is just aggression.'},
     reversed:{brief:'Reckless words or mental energy without direction.',detail:'Reversed, the Knight charges without thinking, or his sharp tongue cuts people who did not deserve it.',advice:'Slow down. Your words are weapons whether you intend them to be or not. Think before you speak, especially when angry.'},
-    scores:{fire:1,water:0,air:5,earth:0,spirit:0,beginning:2,growth:4,mastery:2,completion:0}},
+    scores:{air:10, knight:10}},
 
   { id:'s13', name:'Queen of Swords', num:13, suit:EL, keywords:['perceptive','independent','clear boundaries','honest'],
     symbol:{layers:['outerCircle','triUp','innerCircle','dottedRing','dotLarge']},
@@ -170,7 +170,7 @@ export const SWORDS = [
     worldOutlook:'The world needs clear eyes and honest voices. You see through pretense and name what others will not.',
     upright:{brief:'See clearly and speak honestly. Your perception is your power.',detail:'The Queen of Swords sits on her throne, sword raised, facing the observer directly. She has known loss and used it to sharpen her perception rather than harden her heart. She is fair, honest, and unafraid of uncomfortable truths.',advice:'Speak the truth with precision and compassion. Set clear boundaries. The challenge is remaining compassionate when clarity reveals painful realities. The caution is against becoming so guarded that no one can reach you. Clarity without connection is just isolation.'},
     reversed:{brief:'Cold judgment or harsh words masking pain.',detail:'Reversed, the Queen\'s clarity becomes cruelty. Her pain expresses itself as cutting remarks or emotional unavailability.',advice:'If you are being harsh, ask what wound you are protecting. The sword is for clarity, not punishment.'},
-    scores:{fire:0,water:1,air:5,earth:1,spirit:1,beginning:0,growth:1,mastery:5,completion:1}},
+    scores:{air:10, queen:10}},
 
   { id:'s14', name:'King of Swords', num:14, suit:EL, keywords:['intellectual authority','justice','clear judgment','ethical leadership'],
     symbol:{layers:['outerCircle','triUp','cross','rays','hexagon','dotLarge'],rayCount:6},
@@ -183,5 +183,5 @@ export const SWORDS = [
     worldOutlook:'The world needs clear thinking and fair judgment. You see the role of structure and ethics in human flourishing.',
     upright:{brief:'Judge fairly, think clearly, lead with integrity.',detail:'The King of Swords sits on his throne, sword raised vertically, his gaze steady and impartial. He is the judge, the strategist, the intellectual authority who leads through the power of clear and fair thinking.',advice:'Apply your mind with integrity. Make decisions based on principle, not preference. The challenge is remaining humane while being analytical. The caution is against becoming so detached that you forget the people behind the problems.'},
     reversed:{brief:'Abuse of intellectual power or tyrannical judgment.',detail:'Reversed, the King uses his mental authority to dominate, manipulate, or render unfair judgments.',advice:'Power without compassion is tyranny. If your intellect is being used to control rather than serve, you have lost the crown.'},
-    scores:{fire:1,water:0,air:5,earth:2,spirit:0,beginning:0,growth:0,mastery:5,completion:3}}
+    scores:{air:10, king:10}}
 ];

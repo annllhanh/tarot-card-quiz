@@ -14,7 +14,7 @@ export const PENTACLES = [
     worldOutlook:'The world is offering a tangible chance. Logically, the opportunity is real. Emotionally, you feel grounded and hopeful.',
     upright:{brief:'A new material opportunity arrives. Plant the seed.',detail:'The Ace of Pentacles shows a hand emerging from clouds offering a golden coin above a garden gate. This is the beginning of a new financial venture, career opportunity, health practice, or material investment. The seed is real and fertile.',advice:'Accept the opportunity and commit to tending it. Material growth takes time and consistent effort. The challenge is patience: this seed will not bear fruit overnight. The caution is against greed. One solid opportunity cultivated well outperforms ten scattered bets.'},
     reversed:{brief:'Missed opportunity or poor financial planning.',detail:'Reversed, the coin falls or is not picked up. A material opportunity is being missed, or the planning behind a new venture is inadequate.',advice:'If you missed it, another will come. If your planning is weak, strengthen it before investing. Build the foundation before the walls.'},
-    scores:{fire:0,water:0,air:0,earth:5,spirit:2,beginning:5,growth:2,mastery:0,completion:0}},
+    scores:{earth:10, n1:10}},
 
   { id:'p2', name:'Two of Pentacles', num:2, suit:EL, keywords:['balance','adaptability','juggling','flexibility'],
     symbol:{layers:['outerCircle','infinity','dottedRing','dot'],dots:2},
@@ -27,7 +27,7 @@ export const PENTACLES = [
     worldOutlook:'The world demands multitasking and flexibility. Logically, you see the need for balance. Emotionally, the juggling is exhausting but manageable.',
     upright:{brief:'Juggle with grace. Balance competing demands through flexibility.',detail:'The Two of Pentacles shows a figure dancing while juggling two coins connected by an infinity loop. Ships ride choppy waves behind him. Life is demanding that you balance work and play, income and expenses, or multiple responsibilities.',advice:'Stay flexible. Rigid plans will break under this kind of pressure. The challenge is maintaining equilibrium without dropping anything critical. The caution is against perpetual juggling: if balance never arrives, something needs to be set down.'},
     reversed:{brief:'Overwhelm from too many commitments or financial imbalance.',detail:'Reversed, the juggling fails. Coins drop. You are overcommitted, financially strained, or unable to maintain the balance.',advice:'Something must be released. You cannot juggle indefinitely. Prioritize ruthlessly and let go of the least essential obligation.'},
-    scores:{fire:0,water:0,air:1,earth:4,spirit:0,beginning:1,growth:4,mastery:1,completion:0}},
+    scores:{earth:10, n2:10}},
 
   { id:'p3', name:'Three of Pentacles', num:3, suit:EL, keywords:['teamwork','skill','craftsmanship','collaboration'],
     symbol:{layers:['outerCircle','triangle','dottedInner','hexagon','dot']},
@@ -40,7 +40,7 @@ export const PENTACLES = [
     worldOutlook:'The world values competence and teamwork. Logically, you see that the best results come from skilled collaboration.',
     upright:{brief:'Your skills are recognized. Collaborate to create something excellent.',detail:'The Three of Pentacles shows an artisan working in a cathedral while two figures review the plans together. This is the card of craftsmanship, teamwork, and the recognition of skilled work.',advice:'Invest in your craft. Collaborate with people whose skills complement yours. The challenge is ego: can you accept feedback and share credit? The caution is against working alone when collaboration would produce something better.'},
     reversed:{brief:'Poor teamwork, sloppy work, or unrecognized effort.',detail:'Reversed, the collaboration is dysfunctional or the work quality is slipping. Skills are not being valued or standards have dropped.',advice:'If teamwork is failing, address the communication gap. If your work is unrecognized, ensure the quality justifies the expectation.'},
-    scores:{fire:0,water:0,air:1,earth:5,spirit:0,beginning:1,growth:4,mastery:2,completion:0}},
+    scores:{earth:10, n3:10}},
 
   { id:'p4', name:'Four of Pentacles', num:4, suit:EL, keywords:['security','possessiveness','conservation','control'],
     symbol:{layers:['outerCircle','square','dottedRing','crossSmall','dot']},
@@ -53,7 +53,7 @@ export const PENTACLES = [
     worldOutlook:'The world is a threatening place that will take from you if you let your guard down. Logically, caution is justified. Emotionally, the grip is exhausting.',
     upright:{brief:'You are holding on tightly. Is it security or fear?',detail:'The Four of Pentacles shows a figure clutching coins with hands, feet, and crown. He has achieved stability but his grip is so tight he cannot move, embrace, or receive. This is the card of financial conservatism taken to the point of paralysis.',advice:'Examine what you are protecting and at what cost. Some saving is wise; hoarding is a prison. The challenge is loosening the grip without losing what matters. The caution is against letting fear of poverty drive you to an impoverished life.'},
     reversed:{brief:'Releasing control or financial instability.',detail:'Reversed, the grip loosens. You are either generously letting go of what you have been hoarding, or financial security is slipping through your fingers.',advice:'If releasing willingly, well done. If losing control, rebuild from what remains rather than grasping at what is gone.'},
-    scores:{fire:0,water:0,air:0,earth:5,spirit:0,beginning:0,growth:1,mastery:4,completion:3}},
+    scores:{earth:10, n4:10}},
 
   { id:'p5', name:'Five of Pentacles', num:5, suit:EL, keywords:['hardship','poverty','isolation','struggle'],
     symbol:{layers:['outerCircle','dottedInner','triDown','crossSmall'],rotation:180},
@@ -66,7 +66,7 @@ export const PENTACLES = [
     worldOutlook:'The world is cold and exclusive. Logically, you know help exists somewhere. Emotionally, shame prevents you from asking.',
     upright:{brief:'Hardship is real, but help is closer than you think.',detail:'The Five of Pentacles shows two impoverished figures passing a church with a glowing stained-glass window. They are so focused on their suffering that they do not look up to see the sanctuary nearby. This is the card of financial hardship, health challenges, or feeling excluded.',advice:'Look up. Help is available, but you must be willing to receive it. The challenge is asking for help when pride says you should manage alone. The caution is against wearing hardship as an identity. Suffering is a season, not a sentence.'},
     reversed:{brief:'Recovery from hardship or finding help.',detail:'Reversed, you look up and notice the lit window. Recovery begins, or help arrives from an unexpected source.',advice:'Accept the help. You have earned it by surviving the cold. Let others warm you.'},
-    scores:{fire:0,water:1,air:0,earth:4,spirit:1,beginning:0,growth:2,mastery:0,completion:4}},
+    scores:{earth:10, n5:10}},
 
   { id:'p6', name:'Six of Pentacles', num:6, suit:EL, keywords:['generosity','charity','exchange','balance of giving'],
     symbol:{layers:['outerCircle','hexagon','dottedRing','innerCircle','dot'],dots:6},
@@ -79,7 +79,7 @@ export const PENTACLES = [
     worldOutlook:'The world functions through exchange. Logically, you see the value of fair distribution. Emotionally, you feel the warmth of generosity.',
     upright:{brief:'Give generously or receive graciously. Both require dignity.',detail:'The Six of Pentacles shows a wealthy figure distributing coins to two kneeling people, scales in his other hand. This is the card of charity, mentorship, and the balance of giving and receiving.',advice:'If you have abundance, share it with integrity, not as a power play. If you are receiving, accept without shame. The challenge is maintaining equality in the exchange. The caution is against using generosity to control.'},
     reversed:{brief:'Strings-attached generosity or imbalanced exchange.',detail:'Reversed, the giving comes with conditions, or the exchange is exploitative.',advice:'If generosity has strings, it is not generosity but leverage. If you are being exploited, name the imbalance.'},
-    scores:{fire:0,water:1,air:0,earth:4,spirit:1,beginning:0,growth:3,mastery:2,completion:1}},
+    scores:{earth:10, n6:10}},
 
   { id:'p7', name:'Seven of Pentacles', num:7, suit:EL, keywords:['patience','assessment','long-term investment','waiting'],
     symbol:{layers:['outerCircle','dottedRing','innerCircle','hexagon','dot'],dots:7},
@@ -92,7 +92,7 @@ export const PENTACLES = [
     worldOutlook:'The world rewards patience, but not endlessly. Logically, you are assessing return on investment. Emotionally, you are tired of waiting.',
     upright:{brief:'Pause and assess. Is this investment still worth your effort?',detail:'The Seven of Pentacles shows a figure leaning on a gardening tool, studying seven coins growing on a vine. The harvest is not yet ready. This card asks whether you are willing to keep tending, or whether the crop should be abandoned for a more promising field.',advice:'Evaluate honestly. Not every investment pays off. The challenge is distinguishing patience from stubbornness. The caution is against abandoning something that simply needs more time.'},
     reversed:{brief:'Impatience with slow results or poor return on investment.',detail:'Reversed, patience has run out. Results are not materializing, or the investment was fundamentally flawed.',advice:'If the crop is truly failing, pull it up. If you are simply impatient, adjust your timeline, not your commitment.'},
-    scores:{fire:0,water:0,air:1,earth:5,spirit:0,beginning:0,growth:2,mastery:4,completion:1}},
+    scores:{earth:10, n7:10}},
 
   { id:'p8', name:'Eight of Pentacles', num:8, suit:EL, keywords:['diligence','mastery','skill building','dedication'],
     symbol:{layers:['outerCircle','hexagon','dottedInner','rays','dot'],rayCount:8},
@@ -105,7 +105,7 @@ export const PENTACLES = [
     worldOutlook:'The world rewards skilled, dedicated effort. Logically, you see the path from novice to master. Emotionally, you find satisfaction in the work itself.',
     upright:{brief:'Commit to the craft. Mastery comes through dedicated practice.',detail:'The Eight of Pentacles shows an artisan at his bench, carefully carving coins one by one. He is fully absorbed in the work. This is the card of skill development, apprenticeship, and the love of the craft itself.',advice:'Practice. Study. Refine. The work itself is the reward at this stage. The challenge is avoiding shortcuts. The caution is against perfectionism: "good enough" is sometimes the enemy of "finished."'},
     reversed:{brief:'Sloppy work, lack of dedication, or meaningless labor.',detail:'Reversed, the quality drops. Work is being done carelessly, or the labor has become meaningless repetition without growth.',advice:'If your work lacks quality, reconnect with the purpose behind it. If the work feels pointless, it may be time to find a new craft.'},
-    scores:{fire:0,water:0,air:1,earth:5,spirit:0,beginning:0,growth:3,mastery:4,completion:1}},
+    scores:{earth:10, n8:10}},
 
   { id:'p9', name:'Nine of Pentacles', num:9, suit:EL, keywords:['abundance','self-sufficiency','luxury','independence'],
     symbol:{layers:['outerCircle','hexagon','dottedRing','innerCircle','dotLarge'],dots:9},
@@ -118,7 +118,7 @@ export const PENTACLES = [
     worldOutlook:'The world is abundant for those who invest wisely and work diligently. You are living proof.',
     upright:{brief:'Enjoy the abundance you have earned. You built this.',detail:'The Nine of Pentacles shows a well-dressed woman standing in a vineyard, a falcon on her wrist. She is financially independent, surrounded by luxury, and at peace with her accomplishments.',advice:'Savor what you have created. You earned this. The challenge is allowing yourself pleasure without guilt. The caution is against isolation: abundance without sharing can become a gilded cage.'},
     reversed:{brief:'Financial setback or dependence on others.',detail:'Reversed, the independence is threatened. Financial setbacks, over-reliance on someone else, or the realization that material abundance alone does not equal fulfillment.',advice:'If security is shaken, draw on the skills that built it in the first place. If the abundance feels hollow, look for what money cannot buy.'},
-    scores:{fire:0,water:0,air:0,earth:5,spirit:1,beginning:0,growth:0,mastery:4,completion:4}},
+    scores:{earth:10, n9:10}},
 
   { id:'p10', name:'Ten of Pentacles', num:10, suit:EL, keywords:['legacy','wealth','family','long-term success'],
     symbol:{layers:['outerCircle','hexagon','dottedRing','innerCircle','cross','dotLarge'],dots:10},
@@ -131,7 +131,7 @@ export const PENTACLES = [
     worldOutlook:'The world is shaped by those who build for the long term. Logically, you see the value of legacy. Emotionally, you feel the weight and pride of responsibility.',
     upright:{brief:'Legacy and lasting wealth. What you built will outlive you.',detail:'The Ten of Pentacles shows an elder in an archway, surrounded by family, dogs, and the symbols of generational wealth. This is the card of dynasty, inheritance, and the material stability that supports an entire family or community.',advice:'Think beyond yourself. Build for the next generation. The challenge is sharing control of what you built. The caution is against letting family wealth create family dysfunction. Money without values is a burden, not a gift.'},
     reversed:{brief:'Family financial disputes or legacy in jeopardy.',detail:'Reversed, the legacy is threatened by poor planning, family conflict, or values that were not transmitted alongside the wealth.',advice:'If the legacy is at risk, address the human issues before the financial ones. No amount of money can substitute for a shared vision.'},
-    scores:{fire:0,water:1,air:0,earth:5,spirit:0,beginning:0,growth:0,mastery:3,completion:5}},
+    scores:{earth:10, n10:10}},
 
   { id:'p11', name:'Page of Pentacles', num:11, suit:EL, keywords:['ambition','studiousness','new skill','practical beginning'],
     symbol:{layers:['outerCircle','hexagon','starSmall','dot']},
@@ -144,7 +144,7 @@ export const PENTACLES = [
     worldOutlook:'The world rewards those who start small and build patiently.',
     upright:{brief:'A new skill or practical opportunity. Begin with dedication.',detail:'The Page of Pentacles stands in a green field, gazing intently at a golden coin hovering above his hands. He is the eternal student of practical arts, the person who says "teach me" without shame.',advice:'Begin the course. Start the practice. Learn the skill. The challenge is maintaining interest through the unglamorous early stages. The caution is against studying forever without applying.'},
     reversed:{brief:'Lack of follow-through or unrealistic material goals.',detail:'Reversed, the Page dreams of material success without doing the work, or abandons practical training when it becomes tedious.',advice:'Dreams without labor are fantasies. Start smaller if the goal feels overwhelming, but start.'},
-    scores:{fire:0,water:0,air:1,earth:4,spirit:1,beginning:5,growth:2,mastery:0,completion:0}},
+    scores:{earth:10, page:10}},
 
   { id:'p12', name:'Knight of Pentacles', num:12, suit:EL, keywords:['reliability','methodical','persistence','routine'],
     symbol:{layers:['outerCircle','hexagon','dottedInner','diamond','dot']},
@@ -157,7 +157,7 @@ export const PENTACLES = [
     worldOutlook:'The world rewards persistence. Logically, you see that the tortoise beats the hare. Emotionally, you find peace in routine.',
     upright:{brief:'Slow and steady. Your persistence is your greatest asset.',detail:'The Knight of Pentacles sits on a heavy workhorse, surveying a plowed field. He is the most reliable figure in the deck, the one who shows up every day, does the work, and never quits.',advice:'Keep going. Your pace may not be exciting, but it is effective. The challenge is not becoming so routine-bound that you miss opportunities for growth. The caution is against mistaking stubbornness for dedication.'},
     reversed:{brief:'Stagnation, laziness, or work without purpose.',detail:'Reversed, the Knight stops moving entirely, or his persistence becomes meaningless repetition.',advice:'If stuck, change one small thing. If the work feels pointless, reconnect with the purpose behind the routine.'},
-    scores:{fire:0,water:0,air:0,earth:5,spirit:0,beginning:0,growth:4,mastery:3,completion:1}},
+    scores:{earth:10, knight:10}},
 
   { id:'p13', name:'Queen of Pentacles', num:13, suit:EL, keywords:['nurturing abundance','practical wisdom','generosity','earthy warmth'],
     symbol:{layers:['outerCircle','hexagon','innerCircle','dottedRing','dotLarge']},
@@ -170,7 +170,7 @@ export const PENTACLES = [
     worldOutlook:'The world needs people who create abundance and share it. You see material care as an expression of love.',
     upright:{brief:'Create abundance and share it. Your practical wisdom nurtures all.',detail:'The Queen of Pentacles sits in a flowering garden, a golden coin on her lap, a rabbit at her feet. She is the embodiment of practical abundance: the person who creates a home, a garden, a business that nurtures everyone it touches.',advice:'Tend to the practical needs of those you love. Your ability to create material comfort is a gift. The challenge is caring for yourself as well as you care for others. The caution is against reducing your identity to your productivity.'},
     reversed:{brief:'Neglecting practical needs or over-focus on material comfort.',detail:'Reversed, the Queen either neglects the practical foundations or becomes so focused on material security that she forgets what it was for.',advice:'If you are neglecting basics, tend to them. If you are hoarding comfort, remember that a garden is meant to be enjoyed, not guarded.'},
-    scores:{fire:0,water:1,air:0,earth:5,spirit:1,beginning:0,growth:2,mastery:5,completion:1}},
+    scores:{earth:10, queen:10}},
 
   { id:'p14', name:'King of Pentacles', num:14, suit:EL, keywords:['wealth','business acumen','reliability','material mastery'],
     symbol:{layers:['outerCircle','hexagon','cross','rays','innerCircle','dotLarge'],rayCount:4},
@@ -183,5 +183,5 @@ export const PENTACLES = [
     worldOutlook:'The world is built by those with the patience and skill to create lasting value. You see material success as a craft, not a windfall.',
     upright:{brief:'Material mastery. You have built something that endures.',detail:'The King of Pentacles sits on a throne adorned with bulls, his robes decorated with grapevines, a golden coin in his hand. He is the most materially successful figure in the deck, but his success comes from patience, skill, and wise stewardship, not from greed.',advice:'Manage what you have built with wisdom and generosity. Your material success is a platform for positive impact. The challenge is not becoming defined by your wealth. The caution is against complacency: empires require maintenance.'},
     reversed:{brief:'Greed, materialism, or financial mismanagement.',detail:'Reversed, the King becomes the miser, the corrupt businessman, or the figure so obsessed with wealth that he has lost touch with everything else.',advice:'If money has become your identity, you are bankrupt in ways that matter more. If financial management is failing, get expert help before pride destroys what you built.'},
-    scores:{fire:0,water:0,air:0,earth:5,spirit:0,beginning:0,growth:0,mastery:5,completion:4}}
+    scores:{earth:10, king:10}}
 ];

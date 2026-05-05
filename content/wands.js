@@ -14,7 +14,7 @@ export const WANDS = [
     worldOutlook:'The world is offering a fresh spark. Something new is possible if you have the courage to pursue it.',
     upright:{brief:'A new creative or passionate impulse arrives. Act on it.',detail:'The Ace of Wands is a bolt of inspiration, a new idea, a sudden surge of enthusiasm that demands expression. This is raw creative potential before it has been shaped into anything specific. The universe is handing you a lit torch. What you do with it is up to you.',advice:'Say yes to the inspiration. Start the project, pursue the idea, follow the passion. Do not overthink it at this stage. The challenge is committing to the spark before knowing where it leads. The caution is against waiting for the perfect moment. The fire is now.'},
     reversed:{brief:'Delayed inspiration or creative frustration.',detail:'Reversed, the spark cannot catch. Creative blocks, false starts, or a lack of enthusiasm signal that the timing or direction needs adjustment.',advice:'If inspiration is absent, do not force it. Clear the creative debris first. If ideas keep dying, ask whether you are trying to create what you think you should rather than what truly excites you.'},
-    scores:{fire:5,water:0,air:1,earth:0,spirit:3,beginning:5,growth:1,mastery:0,completion:0}},
+    scores:{fire:10, n1:10}},
 
   { id:'w2', name:'Two of Wands', num:2, suit:EL, keywords:['planning','vision','decision','future focus'],
     symbol:{layers:['outerCircle','cross','dottedRing','dot'],dots:2},
@@ -27,7 +27,7 @@ export const WANDS = [
     worldOutlook:'The world is bigger than your current circumstances. Logically, you see opportunities beyond the horizon. Emotionally, restlessness mixes with ambition.',
     upright:{brief:'You hold the world in your hands. Choose your direction.',detail:'The Two of Wands shows a figure standing at the edge of a castle, holding a globe, looking out at the vast world beyond. The initial spark of the Ace has been internalized and now demands a plan. This is the moment between vision and action.',advice:'Map your vision. Make a plan. Choose a direction, knowing you cannot go everywhere at once. The challenge is committing to one path when many seem appealing. The caution is against staying in the planning phase forever.'},
     reversed:{brief:'Fear of the unknown or poor planning.',detail:'Reversed, you either cannot choose a direction or are afraid to leave the safety of what you know. Analysis paralysis or timidity holds back what could be a bold venture.',advice:'The globe will not turn itself. If you are stuck, the problem is not information but courage. Choose. You can adjust course later.'},
-    scores:{fire:4,water:0,air:2,earth:1,spirit:1,beginning:4,growth:3,mastery:0,completion:0}},
+    scores:{fire:10, n2:10}},
 
   { id:'w3', name:'Three of Wands', num:3, suit:EL, keywords:['expansion','foresight','progress','exploration'],
     symbol:{layers:['outerCircle','triangle','rays','dottedInner','dot'],rayCount:3},
@@ -40,7 +40,7 @@ export const WANDS = [
     worldOutlook:'The world is responding to your initiative. Logically, you see early returns. Emotionally, you feel the excitement of expansion.',
     upright:{brief:'Your plans are working. The ships you sent out are returning.',detail:'The Three of Wands stands on a cliff watching ships cross the sea. What was once a plan is now in motion, and early results confirm you chose well. This is the card of expansion, overseas ventures, and the confidence of watching your vision materialize.',advice:'Keep the long view. Do not micromanage what is already in motion. The challenge is patience as results unfold. The caution is against complacency: early success requires sustained effort.'},
     reversed:{brief:'Delays in plans or reluctance to expand.',detail:'Reversed, the ships are delayed or you are refusing to send them at all. Fear of expansion or unexpected obstacles are slowing progress.',advice:'Check whether the delays are external or self-created. If external, adapt. If internal, ask what you are afraid of outgrowing.'},
-    scores:{fire:4,water:0,air:1,earth:1,spirit:1,beginning:2,growth:5,mastery:1,completion:0}},
+    scores:{fire:10, n3:10}},
 
   { id:'w4', name:'Four of Wands', num:4, suit:EL, keywords:['celebration','homecoming','harmony','milestone'],
     symbol:{layers:['outerCircle','square','dottedRing','starSmall','dot'],dots:4},
@@ -53,7 +53,7 @@ export const WANDS = [
     worldOutlook:'The world feels welcoming and supportive. Logically, you recognize a milestone. Emotionally, you feel gratitude and belonging.',
     upright:{brief:'Celebrate. A milestone has been reached and community gathers.',detail:'The Four of Wands depicts a joyful gathering beneath a canopy of flowers. This is the card of weddings, homecomings, reunions, and milestones. Something you have been building has reached a stage worth celebrating.',advice:'Celebrate genuinely. Share your joy with the people who supported you. The challenge is allowing yourself to pause in a culture that prizes constant productivity. The caution is against skipping the celebration entirely. Joy acknowledged becomes fuel for what comes next.'},
     reversed:{brief:'Disrupted celebration or lack of community support.',detail:'Reversed, the celebration is postponed or hollow. There may be tension in the home, a milestone that goes unacknowledged, or a feeling of not belonging.',advice:'If the celebration feels forced, ask what is missing. Community? Authenticity? Recognition? Address the root, not the symptom.'},
-    scores:{fire:3,water:1,air:0,earth:2,spirit:1,beginning:0,growth:4,mastery:2,completion:2}},
+    scores:{fire:10, n4:10}},
 
   { id:'w5', name:'Five of Wands', num:5, suit:EL, keywords:['conflict','competition','struggle','creative tension'],
     symbol:{layers:['outerCircle','star5','crossSmall','dottedInner'],rotation:0},
@@ -66,7 +66,7 @@ export const WANDS = [
     worldOutlook:'The world is competitive and noisy. Logically, you see multiple valid perspectives colliding. Emotionally, you feel frustrated or energized by the clash.',
     upright:{brief:'Creative friction. Competition is testing your resolve.',detail:'The Five of Wands shows five figures swinging wands at each other, but nobody is being seriously hurt. This is not war; it is the healthy friction of competing ideas, personalities, or approaches. Sometimes growth requires sparring.',advice:'Engage the conflict rather than avoiding it. But fight fair and stay focused on the goal, not the ego. The challenge is distinguishing productive friction from pointless drama. The caution is against mistaking chaos for creativity.'},
     reversed:{brief:'Avoidance of conflict or internal struggle.',detail:'Reversed, the conflict moves internal. You may be avoiding necessary confrontation or fighting a battle inside yourself that you will not bring to the surface.',advice:'If you are avoiding the fight, ask what you are protecting. If the battle is internal, name the competing voices and let them speak.'},
-    scores:{fire:4,water:0,air:2,earth:0,spirit:0,beginning:0,growth:5,mastery:1,completion:0}},
+    scores:{fire:10, n5:10}},
 
   { id:'w6', name:'Six of Wands', num:6, suit:EL, keywords:['victory','recognition','triumph','confidence'],
     symbol:{layers:['outerCircle','hexagon','rays','dottedRing','dot'],dots:6,rayCount:6},
@@ -79,7 +79,7 @@ export const WANDS = [
     worldOutlook:'The world is cheering. Logically, you see the results of sustained effort. Emotionally, you feel pride and validation.',
     upright:{brief:'Victory and public recognition. You have earned this.',detail:'The Six of Wands shows a figure riding through a crowd, a laurel wreath on his wand, the people celebrating his triumph. This is earned victory, the kind that comes from surviving the competition of the Five.',advice:'Accept the recognition with grace. Share credit where it is due. The challenge is staying humble in success. The caution is against becoming addicted to applause. External validation is sweet, but it cannot be your only fuel.'},
     reversed:{brief:'Delayed recognition or ego inflation.',detail:'Reversed, the victory parade is either cancelled or has gone to your head. You may not be receiving the recognition you deserve, or you may be overestimating your achievements.',advice:'If recognition is absent, continue anyway. If ego is inflated, remember who helped you get here.'},
-    scores:{fire:4,water:0,air:1,earth:1,spirit:1,beginning:0,growth:3,mastery:4,completion:1}},
+    scores:{fire:10, n6:10}},
 
   { id:'w7', name:'Seven of Wands', num:7, suit:EL, keywords:['perseverance','defense','standing ground','challenge'],
     symbol:{layers:['outerCircle','triangle','dottedInner','rays','dot'],rayCount:7},
@@ -92,7 +92,7 @@ export const WANDS = [
     worldOutlook:'The world is demanding that you prove yourself again. Logically, you see the challenge. Emotionally, you feel both exhaustion and fierce determination.',
     upright:{brief:'Stand your ground. The challenge tests your conviction.',detail:'The Seven of Wands shows a figure on a hilltop fending off six wands from below. The advantage is yours but the pressure is real. This card appears when you must defend your position, beliefs, or achievements against opposition.',advice:'Do not back down from what you believe in. You have the higher ground. The challenge is endurance: how long can you sustain this defense? The caution is against defending positions that no longer serve you simply out of stubbornness.'},
     reversed:{brief:'Giving in to pressure or overwhelmed by opposition.',detail:'Reversed, you are either backing down when you should stand firm or holding a position that is no longer worth defending.',advice:'Assess honestly: is this hill worth dying on? If yes, dig in. If no, retreat strategically, not in defeat but in wisdom.'},
-    scores:{fire:4,water:0,air:1,earth:1,spirit:1,beginning:0,growth:3,mastery:4,completion:0}},
+    scores:{fire:10, n7:10}},
 
   { id:'w8', name:'Eight of Wands', num:8, suit:EL, keywords:['speed','momentum','swift action','alignment'],
     symbol:{layers:['outerCircle','rays','dottedRing','diamond','dot'],rayCount:8,dots:8},
@@ -105,7 +105,7 @@ export const WANDS = [
     worldOutlook:'The world is moving fast and you are moving with it. Logically, you see clear pathways. Emotionally, you feel the thrill of momentum.',
     upright:{brief:'Everything is moving fast. Align yourself and ride the current.',detail:'The Eight of Wands shows eight staves flying through the air in perfect alignment. No obstacles, no figures, just pure directed energy. This is the card of swift progress, rapid communication, and the exhilarating feeling of everything clicking into place.',advice:'Act quickly. The window is open now. Do not hesitate or overthink. The challenge is making decisions at speed without losing accuracy. The caution is against mistaking velocity for direction. Fast movement in the wrong direction is still wrong.'},
     reversed:{brief:'Delays, miscommunication, or scattered energy.',detail:'Reversed, the wands lose their alignment. Messages are delayed or distorted. Plans stall. Energy scatters rather than focusing.',advice:'If things are stalling, do not force them. Something in the trajectory needs adjustment. Slow down, recalibrate, then launch again.'},
-    scores:{fire:4,water:0,air:2,earth:0,spirit:1,beginning:1,growth:4,mastery:2,completion:1}},
+    scores:{fire:10, n8:10}},
 
   { id:'w9', name:'Nine of Wands', num:9, suit:EL, keywords:['resilience','persistence','last stand','guarded'],
     symbol:{layers:['outerCircle','rays','dottedInner','crossSmall','dot'],rayCount:9},
@@ -118,7 +118,7 @@ export const WANDS = [
     worldOutlook:'The world feels threatening because you have been hurt before. Logically, you know you are close to the finish. Emotionally, you are bracing for one more blow.',
     upright:{brief:'You are battered but not broken. One more push.',detail:'The Nine of Wands shows a wounded figure leaning on a wand, eight more wands behind him like a wall. He has survived every challenge so far, but the experience has left him guarded and exhausted. This card appears when you are near the end of a difficult period and need just a bit more endurance.',advice:'You are closer to the end than you think. Do not give up now. But also do not pretend the wounds do not exist. Rest if you can, then take the final steps. The challenge is trusting that the end is near. The caution is against permanent guardedness: not every future encounter is an attack.'},
     reversed:{brief:'Exhaustion, stubbornness, or refusing to ask for help.',detail:'Reversed, you have pushed past endurance into burnout. The wall of wands has become a prison rather than a defense.',advice:'Put down your guard long enough to accept help. Stubbornness is not the same as strength. If you have been fighting alone, it is time to let someone share the weight.'},
-    scores:{fire:3,water:1,air:1,earth:1,spirit:1,beginning:0,growth:2,mastery:4,completion:3}},
+    scores:{fire:10, n9:10}},
 
   { id:'w10', name:'Ten of Wands', num:10, suit:EL, keywords:['burden','overcommitment','responsibility','near completion'],
     symbol:{layers:['outerCircle','cross','rays','dottedRing','dot'],rayCount:10,dots:4},
@@ -131,7 +131,7 @@ export const WANDS = [
     worldOutlook:'The world demands everything from you. Logically, you know something must be set down. Emotionally, you feel unable to let anything go.',
     upright:{brief:'You are carrying too much. The destination is close, but the load must be addressed.',detail:'The Ten of Wands shows a figure staggering under the weight of ten wands, barely able to see the town ahead. This is the card of overcommitment, burnout, and the final test of the fire journey: knowing when passion has become a prison.',advice:'Delegate, prioritize, or set something down. You cannot carry all of this alone. The challenge is admitting you have taken on too much. The caution is against martyrdom: carrying everything does not make you a hero. It makes you unavailable.'},
     reversed:{brief:'Releasing burdens or collapse from overwork.',detail:'Reversed, you are either finally setting down what you should not carry, or the weight has become too much and you are buckling.',advice:'Let go. Seriously. Put it down. The world will not end if you delegate. If you have already collapsed, forgive yourself and rebuild with fewer obligations.'},
-    scores:{fire:3,water:0,air:0,earth:2,spirit:0,beginning:0,growth:1,mastery:3,completion:5}},
+    scores:{fire:10, n10:10}},
 
   { id:'w11', name:'Page of Wands', num:11, suit:EL, keywords:['enthusiasm','exploration','curiosity','free spirit'],
     symbol:{layers:['outerCircle','triUp','starSmall','dot']},
@@ -144,7 +144,7 @@ export const WANDS = [
     worldOutlook:'The world is a playground of possibilities. Logically, you see options everywhere. Emotionally, you feel excited and impatient.',
     upright:{brief:'A new creative adventure calls. Follow your curiosity.',detail:'The Page of Wands stands in a desert landscape, examining his wand with fascination. He is the eternal beginner, the one who says yes before knowing what he is agreeing to. This card brings news of a new creative or spiritual venture, an invitation to explore.',advice:'Say yes to the adventure. Do not worry about expertise; enthusiasm is your current asset. The challenge is following through after the initial excitement fades. The caution is against committing to so many new things that none receive adequate attention.'},
     reversed:{brief:'Lack of direction or all talk, no action.',detail:'Reversed, the Page talks about adventures but never leaves. Creative ideas stay as ideas. Enthusiasm burns bright but produces no heat.',advice:'Pick one thing and actually start it. Talking about fire is not the same as building one.'},
-    scores:{fire:4,water:0,air:2,earth:1,spirit:1,beginning:5,growth:2,mastery:0,completion:0}},
+    scores:{fire:10, page:10}},
 
   { id:'w12', name:'Knight of Wands', num:12, suit:EL, keywords:['action','adventure','boldness','impulsiveness'],
     symbol:{layers:['outerCircle','triUp','rays','diamond','dot'],rayCount:6},
@@ -157,7 +157,7 @@ export const WANDS = [
     worldOutlook:'The world rewards those who move fast and commit fully. Logically, you see hesitation as the greatest risk. Emotionally, you feel the rush of action.',
     upright:{brief:'Charge forward with passion. Action speaks louder than planning.',detail:'The Knight of Wands gallops at full speed, wand raised, ready for whatever comes. He does not plan; he acts. This card appears when boldness is required, when the situation demands decisive movement rather than careful deliberation.',advice:'Go. Move. Act with full commitment and adjust as you ride. The challenge is maintaining direction within the velocity. The caution is against confusing recklessness with courage. Speed without awareness is just a faster way to crash.'},
     reversed:{brief:'Reckless action or frustrated energy with no outlet.',detail:'Reversed, the Knight either charges blindly into disaster or sits frustrated, unable to find a worthy quest.',advice:'If you are reckless, slow down enough to see where you are heading. If you are stuck, find a cause worth your considerable energy.'},
-    scores:{fire:5,water:0,air:1,earth:0,spirit:1,beginning:2,growth:5,mastery:1,completion:0}},
+    scores:{fire:10, knight:10}},
 
   { id:'w13', name:'Queen of Wands', num:13, suit:EL, keywords:['confidence','warmth','determination','charisma'],
     symbol:{layers:['outerCircle','triUp','innerCircle','rays','dotLarge'],rayCount:8},
@@ -170,7 +170,7 @@ export const WANDS = [
     worldOutlook:'The world responds to your energy. Logically, you see influence as a natural extension of authenticity. Emotionally, you feel generous with your fire.',
     upright:{brief:'Radiate your authentic fire. Your confidence inspires others.',detail:'The Queen of Wands sits on her throne with a sunflower in one hand and a black cat at her feet. She is warm, charismatic, and fiercely independent. Her confidence comes not from external validation but from deep self-knowledge.',advice:'Lead with warmth and authenticity. Your natural charisma is an asset, but use it to lift others, not to dominate. The challenge is maintaining your fire while honoring the fire in others. The caution is against jealousy: another person shining does not dim your light.'},
     reversed:{brief:'Insecurity masked by bravado or jealousy of others.',detail:'Reversed, the Queen\'s confidence becomes a performance. Beneath the bravado lies insecurity, jealousy, or a need for control disguised as leadership.',advice:'If you are performing confidence rather than feeling it, stop and reconnect with what genuinely excites you. Authentic fire does not need an audience.'},
-    scores:{fire:5,water:1,air:0,earth:1,spirit:1,beginning:0,growth:2,mastery:5,completion:1}},
+    scores:{fire:10, queen:10}},
 
   { id:'w14', name:'King of Wands', num:14, suit:EL, keywords:['leadership','vision','entrepreneurship','bold authority'],
     symbol:{layers:['outerCircle','triUp','cross','rays','hexagon','dotLarge'],rayCount:8},
@@ -183,5 +183,5 @@ export const WANDS = [
     worldOutlook:'The world is shaped by those bold enough to lead. Logically, you see opportunity where others see risk. Emotionally, you feel the weight and thrill of responsibility.',
     upright:{brief:'Lead with vision and fire. Your boldness creates the path for others.',detail:'The King of Wands sits on his throne, a salamander at his feet, his wand bearing leaves of new growth. He is the natural leader, the entrepreneur, the visionary who turns creative fire into lasting impact. He leads not through control but through the force of his example.',advice:'Step into leadership fully. Your vision is needed and your fire inspires others to find their own. The challenge is delegating: the King cannot do everything himself. The caution is against tyranny disguised as passion. Leadership serves the people, not the leader.'},
     reversed:{brief:'Domineering leadership or a vision that has become self-serving.',detail:'Reversed, the King uses his fire to dominate rather than inspire. His vision has narrowed to serve his ego, and his boldness has become bullying.',advice:'Check your motives. Are you leading for the vision or for the throne? If your fire is burning others, you have lost the plot.'},
-    scores:{fire:5,water:0,air:1,earth:2,spirit:1,beginning:0,growth:1,mastery:5,completion:2}}
+    scores:{fire:10, king:10}}
 ];

@@ -14,7 +14,7 @@ export const CUPS = [
     worldOutlook:'The world is offering emotional connection, love, or creative inspiration. You need only open your hands to receive.',
     upright:{brief:'Your heart is opening. A new emotional experience arrives.',detail:'The Ace of Cups shows a chalice overflowing with five streams of living water, a dove descending with a communion wafer. This is the purest offering of emotional and spiritual nourishment. A new love, a deepening of compassion, a creative inspiration rooted in feeling.',advice:'Open your heart. Receive what is being offered without calculating the cost. The challenge is vulnerability: this cup can only fill if your hands are open. The caution is against emotional greed. One deep connection is worth more than many shallow ones.'},
     reversed:{brief:'Blocked emotions or refused emotional offering.',detail:'Reversed, the cup tilts and the water spills. An emotional opportunity is being missed or rejected, perhaps because past wounds have made you afraid to feel again.',advice:'If you are blocking, ask what you are protecting. If a wound is leaking, tend it before trying to fill the cup.'},
-    scores:{fire:0,water:5,air:0,earth:1,spirit:3,beginning:5,growth:1,mastery:0,completion:0}},
+    scores:{water:10, n1:10}},
 
   { id:'c2', name:'Two of Cups', num:2, suit:EL, keywords:['partnership','mutual attraction','connection','balance'],
     symbol:{layers:['outerCircle','cross','wave','dottedInner','dot']},
@@ -27,7 +27,7 @@ export const CUPS = [
     worldOutlook:'The world contains your counterpart. Logically, you see the value of equal partnership. Emotionally, you feel the magnetism of deep connection.',
     upright:{brief:'A genuine connection. Two hearts meet as equals.',detail:'The Two of Cups shows two figures exchanging chalices, the caduceus of healing rising between them. This is the card of mutual attraction, equal partnership, and the chemistry that arises when two people truly see each other.',advice:'Honor the connection. Meet the other person as an equal. The challenge is maintaining your own identity within the partnership. The caution is against projecting your ideal onto the real person in front of you.'},
     reversed:{brief:'Imbalanced relationship or broken connection.',detail:'Reversed, the exchange becomes one-sided. One person gives while the other takes, or the connection has soured into resentment.',advice:'If the balance is off, name it. Partnerships only survive when both cups are equally full and equally shared.'},
-    scores:{fire:0,water:5,air:0,earth:1,spirit:1,beginning:3,growth:4,mastery:0,completion:0}},
+    scores:{water:10, n2:10}},
 
   { id:'c3', name:'Three of Cups', num:3, suit:EL, keywords:['friendship','community','celebration','shared joy'],
     symbol:{layers:['outerCircle','triangle','wave','dottedRing','dot'],dots:3},
@@ -40,7 +40,7 @@ export const CUPS = [
     worldOutlook:'The world is full of people worth celebrating with. Emotionally, you feel the abundance of shared joy.',
     upright:{brief:'Celebrate with your people. Shared joy multiplies.',detail:'The Three of Cups shows three figures dancing together, chalices raised in toast. This is the card of friendship, community gatherings, and the emotional nourishment that comes from being loved by a group.',advice:'Gather your people. Celebrate together. The challenge is making time for connection in a busy life. The caution is against excess: celebration is medicine, not escape.'},
     reversed:{brief:'Social isolation or superficial connections.',detail:'Reversed, the gathering feels hollow. You may be surrounded by people but feeling alone, or avoiding social connection entirely.',advice:'Quality over quantity. If your social life feels empty, seek depth, not breadth. One real conversation outweighs ten surface-level events.'},
-    scores:{fire:1,water:4,air:0,earth:1,spirit:1,beginning:1,growth:4,mastery:1,completion:1}},
+    scores:{water:10, n3:10}},
 
   { id:'c4', name:'Four of Cups', num:4, suit:EL, keywords:['contemplation','apathy','reevaluation','withdrawn'],
     symbol:{layers:['outerCircle','square','wave','innerCircle','dot']},
@@ -53,7 +53,7 @@ export const CUPS = [
     worldOutlook:'The world is offering something but you cannot bring yourself to care. Logically, you know you should be grateful. Emotionally, nothing lands.',
     upright:{brief:'Dissatisfaction despite abundance. Look at what is being offered.',detail:'The Four of Cups shows a figure sitting under a tree, arms crossed, staring at three cups on the ground while a hand from a cloud offers a fourth. He does not see it. This card appears when apathy, boredom, or emotional withdrawal prevents you from recognizing opportunities.',advice:'Look up. Something is being offered that you cannot see because you are focused on what you do not have. The challenge is distinguishing genuine contemplation from self-indulgent brooding. The caution is against refusing gifts because they do not match your fantasy.'},
     reversed:{brief:'Emerging from apathy or accepting new emotional input.',detail:'Reversed, you are beginning to notice the offered cup. The fog of disinterest is lifting.',advice:'If motivation is returning, welcome it without judgment. You needed the pause. Now receive.'},
-    scores:{fire:0,water:4,air:1,earth:1,spirit:1,beginning:0,growth:2,mastery:2,completion:2}},
+    scores:{water:10, n4:10}},
 
   { id:'c5', name:'Five of Cups', num:5, suit:EL, keywords:['grief','loss','regret','perspective'],
     symbol:{layers:['outerCircle','wave','dottedInner','triDown','dot'],rotation:0},
@@ -66,7 +66,7 @@ export const CUPS = [
     worldOutlook:'The world has taken something precious from you. Logically, you know that loss is part of life. Emotionally, the pain is overwhelming.',
     upright:{brief:'Grief is real, but look behind you. Two cups still stand.',detail:'The Five of Cups shows a cloaked figure mourning three spilled cups, unable to see the two full cups standing behind them. This is the card of grief, regret, and the tunnel vision of loss.',advice:'Grieve fully. Do not skip the pain. But when you are ready, turn around. Something survived. The challenge is allowing grief without drowning in it. The caution is against using loss as an identity. You are not defined by what was taken from you.'},
     reversed:{brief:'Beginning to recover from loss or accepting what remains.',detail:'Reversed, the figure begins to turn. The two remaining cups come into view. Recovery is beginning.',advice:'Let the recovery unfold at its own pace. Do not rush back to "fine." But do let yourself notice what survived.'},
-    scores:{fire:0,water:5,air:0,earth:0,spirit:2,beginning:0,growth:2,mastery:0,completion:4}},
+    scores:{water:10, n5:10}},
 
   { id:'c6', name:'Six of Cups', num:6, suit:EL, keywords:['nostalgia','innocence','reunion','childhood'],
     symbol:{layers:['outerCircle','hexagon','wave','dottedRing','dot'],dots:6},
@@ -79,7 +79,7 @@ export const CUPS = [
     worldOutlook:'The world was simpler once, and that simplicity still has wisdom to offer. Emotionally, you feel warmth from memory.',
     upright:{brief:'The past offers a gift. Receive it with the innocence of a child.',detail:'The Six of Cups shows a child offering a cup of flowers to another child in a garden. This is the card of nostalgia, innocence, reunions, and the healing that comes from reconnecting with your roots.',advice:'Allow yourself to revisit the past with tenderness. Accept the gifts it offers. The challenge is enjoying nostalgia without becoming trapped in it. The caution is against idealizing a past that was not as perfect as memory suggests.'},
     reversed:{brief:'Stuck in the past or refusing to grow up.',detail:'Reversed, nostalgia becomes a refuge from the present. You may be clinging to childhood patterns or refusing to face adult reality.',advice:'The past was beautiful, but you do not live there anymore. Bring forward what was good and leave the rest.'},
-    scores:{fire:0,water:4,air:0,earth:2,spirit:1,beginning:1,growth:2,mastery:2,completion:2}},
+    scores:{water:10, n6:10}},
 
   { id:'c7', name:'Seven of Cups', num:7, suit:EL, keywords:['fantasy','illusion','choices','wishful thinking'],
     symbol:{layers:['outerCircle','dottedRing','wave','starSmall','dot'],dots:7},
@@ -92,7 +92,7 @@ export const CUPS = [
     worldOutlook:'The world is full of shimmering options. Logically, you know not all of them are real. Emotionally, each one is irresistible.',
     upright:{brief:'Many options appear, but not all are real. Choose wisely.',detail:'The Seven of Cups shows a figure gazing at seven cups floating in clouds, each containing a different prize: jewels, a castle, a snake, a wreath, a dragon, a glowing figure, a veiled head. Some are genuine; some are illusion. This card appears when fantasy is clouding judgment.',advice:'Ground your desires in reality. Ask which of these options you would still want if they required real sacrifice. The challenge is discernment. The caution is against choosing the most dazzling option without checking what is inside.'},
     reversed:{brief:'Clarity cutting through fantasy or overwhelm from too many choices.',detail:'Reversed, the clouds are either clearing (you can finally see what is real) or thickening (overwhelm from decision paralysis).',advice:'If clarity is arriving, act on it before the fog returns. If you are overwhelmed, eliminate options rather than adding more.'},
-    scores:{fire:0,water:4,air:2,earth:0,spirit:1,beginning:1,growth:3,mastery:1,completion:1}},
+    scores:{water:10, n7:10}},
 
   { id:'c8', name:'Eight of Cups', num:8, suit:EL, keywords:['departure','seeking more','emotional courage','walking away'],
     symbol:{layers:['outerCircle','wave','crescent','dottedInner','dot']},
@@ -105,7 +105,7 @@ export const CUPS = [
     worldOutlook:'The world has given you much, but something essential is missing. Logically, you see that staying would be settling. Emotionally, leaving is heartbreaking.',
     upright:{brief:'Walk away from what no longer fulfills you. The path ahead holds more.',detail:'The Eight of Cups shows a figure walking away from eight stacked cups, heading toward a mountain under a crescent moon. This is not abandonment; it is the brave recognition that emotional fulfillment requires you to seek beyond what is familiar.',advice:'Leave with gratitude, not bitterness. What you are walking away from served its purpose. The challenge is accepting the loneliness of the path ahead. The caution is against walking away from everything whenever it gets hard. This card is about genuine unfulfillment, not restlessness.'},
     reversed:{brief:'Fear of leaving or aimless wandering.',detail:'Reversed, you either cannot bring yourself to leave what is unfulfilling, or you are wandering without knowing what you seek.',advice:'If you are staying out of fear, name the fear. If you are wandering, define what "enough" would look like before you keep searching.'},
-    scores:{fire:0,water:4,air:1,earth:0,spirit:2,beginning:2,growth:2,mastery:2,completion:3}},
+    scores:{water:10, n8:10}},
 
   { id:'c9', name:'Nine of Cups', num:9, suit:EL, keywords:['satisfaction','contentment','gratitude','wish fulfilled'],
     symbol:{layers:['outerCircle','wave','dottedRing','innerCircle','dotLarge'],dots:9},
@@ -118,7 +118,7 @@ export const CUPS = [
     worldOutlook:'The world has given you what you asked for. Logically, you see the results of emotional investment. Emotionally, you feel deeply content.',
     upright:{brief:'Your wish is granted. Savor the satisfaction.',detail:'The Nine of Cups, known as the "wish card," shows a figure seated before nine golden cups, arms folded in satisfaction. What you wished for emotionally is arriving or has arrived. This is genuine contentment, not fleeting pleasure.',advice:'Receive it. Do not deflect, minimize, or immediately wish for more. Sit with the satisfaction. The challenge is allowing yourself to be happy without waiting for the other shoe to drop. The caution is against smugness: gratitude is attractive, complacency is not.'},
     reversed:{brief:'Unfulfilled wishes or shallow satisfaction.',detail:'Reversed, the wish either has not arrived or its arrival reveals that it is not what you truly wanted.',advice:'If the wish disappoints, the problem was the wish, not the universe. Go deeper. What do you actually need beneath what you thought you wanted?'},
-    scores:{fire:0,water:4,air:0,earth:2,spirit:2,beginning:0,growth:1,mastery:3,completion:4}},
+    scores:{water:10, n9:10}},
 
   { id:'c10', name:'Ten of Cups', num:10, suit:EL, keywords:['harmony','family','emotional fulfillment','lasting joy'],
     symbol:{layers:['outerCircle','wave','hexagon','dottedRing','innerCircle','dotLarge'],dots:10},
@@ -131,7 +131,7 @@ export const CUPS = [
     worldOutlook:'The world is a good place when love is real and sustained. Logically, you see the fruit of emotional investment. Emotionally, you feel complete.',
     upright:{brief:'Lasting emotional fulfillment. Love sustained and shared.',detail:'The Ten of Cups shows a family standing beneath a rainbow of ten cups, arms raised in joy. This is not momentary happiness but sustained emotional fulfillment: the kind that comes from building real relationships over time.',advice:'Nurture what you have. This level of emotional fulfillment is rare and precious. The challenge is not taking it for granted. The caution is against perfection: no family or relationship is without friction. The rainbow does not erase the rain; it follows it.'},
     reversed:{brief:'Broken harmony or unattainable ideals of happiness.',detail:'Reversed, the rainbow fades. Family tensions, broken bonds, or impossible standards of happiness mar what could be beautiful.',advice:'If harmony is disrupted, address the real issue, not the surface symptom. If your ideal of happiness is unreachable, lower the bar from "perfect" to "real."'},
-    scores:{fire:0,water:5,air:0,earth:2,spirit:1,beginning:0,growth:1,mastery:2,completion:5}},
+    scores:{water:10, n10:10}},
 
   { id:'c11', name:'Page of Cups', num:11, suit:EL, keywords:['creative message','emotional curiosity','imagination','tender beginning'],
     symbol:{layers:['outerCircle','wave','starSmall','dot']},
@@ -144,7 +144,7 @@ export const CUPS = [
     worldOutlook:'The world is full of emotional beauty waiting to be discovered. You see with the eyes of wonder.',
     upright:{brief:'A tender emotional message or creative inspiration arrives.',detail:'The Page of Cups stands at the shore, surprised by a fish popping out of his cup. This card brings unexpected emotional messages, creative inspirations, or the beginning of a new emotional chapter characterized by wonder.',advice:'Stay open to surprises. Do not dismiss the intuitive nudge or the unexpected feeling. The challenge is staying receptive without becoming naive. The caution is against emotional immaturity: wonder is beautiful, but it needs to mature.'},
     reversed:{brief:'Emotional immaturity or creative blocks.',detail:'Reversed, the Page either refuses to feel or feels everything without processing.',advice:'If blocked, return to play. Creativity follows joy, not pressure. If overwhelmed, learn to hold emotions rather than being held by them.'},
-    scores:{fire:0,water:4,air:1,earth:1,spirit:2,beginning:4,growth:2,mastery:0,completion:0}},
+    scores:{water:10, page:10}},
 
   { id:'c12', name:'Knight of Cups', num:12, suit:EL, keywords:['romance','charm','following the heart','idealism'],
     symbol:{layers:['outerCircle','wave','triUp','diamond','dot']},
@@ -157,7 +157,7 @@ export const CUPS = [
     worldOutlook:'The world deserves to be approached with grace, beauty, and emotional honesty.',
     upright:{brief:'Follow your heart with grace. The romantic quest has begun.',detail:'The Knight of Cups rides slowly toward you, offering a cup like a proposal. He is the poet, the lover, the artist who follows emotion as his guiding star. This card appears when the heart is leading and asking you to trust it.',advice:'Follow the feeling with sincerity. Approach the situation with grace and emotional openness. The challenge is balancing idealism with reality. The caution is against falling in love with the idea of love rather than the person in front of you.'},
     reversed:{brief:'Unrealistic expectations or emotional manipulation.',detail:'Reversed, the Knight\'s romanticism becomes escapism or his charm becomes manipulation.',advice:'If you are chasing a fantasy, land. If you are using charm to get what you want, check your sincerity.'},
-    scores:{fire:0,water:5,air:1,earth:0,spirit:1,beginning:2,growth:4,mastery:1,completion:0}},
+    scores:{water:10, knight:10}},
 
   { id:'c13', name:'Queen of Cups', num:13, suit:EL, keywords:['emotional depth','compassion','intuition','empathy'],
     symbol:{layers:['outerCircle','wave','innerCircle','crescent','dotLarge']},
@@ -170,7 +170,7 @@ export const CUPS = [
     worldOutlook:'The world needs more compassion and emotional depth. You see beneath the surface of every situation.',
     upright:{brief:'Trust your emotional wisdom. Hold space with compassion.',detail:'The Queen of Cups sits by the sea, holding an ornate closed cup. She is the empathic healer, the counselor, the one who feels everything but is not destroyed by it. Her cup is closed because she has learned that not all emotions need to be shared.',advice:'Trust your intuition. Offer compassion without losing yourself. The challenge is maintaining boundaries while remaining emotionally available. The caution is against absorbing others\' emotions as your own. Empathy without boundaries becomes codependency.'},
     reversed:{brief:'Emotional overwhelm or codependency.',detail:'Reversed, the Queen drowns in the feelings she usually masters. The boundary between self and other dissolves.',advice:'If you are overwhelmed, pull back. Your compassion is a gift, but it requires the container of healthy boundaries to function.'},
-    scores:{fire:0,water:5,air:0,earth:1,spirit:3,beginning:0,growth:2,mastery:5,completion:1}},
+    scores:{water:10, queen:10}},
 
   { id:'c14', name:'King of Cups', num:14, suit:EL, keywords:['emotional maturity','diplomacy','calm authority','wisdom'],
     symbol:{layers:['outerCircle','wave','cross','innerCircle','hexagon','dotLarge']},
@@ -183,5 +183,5 @@ export const CUPS = [
     worldOutlook:'The world needs leaders who can think and feel. Logically, you see the value of emotional intelligence. Emotionally, you remain calm in storms.',
     upright:{brief:'Lead with emotional intelligence. Calm seas reflect deep waters.',detail:'The King of Cups sits on his throne amid a turbulent sea, yet he remains perfectly calm. A fish leaps at his feet and a ship sails in the background. He is the master of the emotional realm, able to feel everything without being controlled by anything.',advice:'Govern with both head and heart. Your emotional maturity is your greatest leadership asset. The challenge is remaining open while maintaining composure. The caution is against emotional repression disguised as maturity. Calm is not the absence of feeling.'},
     reversed:{brief:'Emotional manipulation or suppressed feelings creating problems.',detail:'Reversed, the King either uses emotional intelligence to manipulate, or his calm exterior hides a sea of unexpressed turmoil.',advice:'If you are manipulating, stop. Emotional intelligence used for control is the most dangerous kind. If you are suppressing, let yourself feel. The sea cannot be bottled forever.'},
-    scores:{fire:1,water:5,air:1,earth:1,spirit:1,beginning:0,growth:1,mastery:5,completion:2}}
+    scores:{water:10, king:10}}
 ];
