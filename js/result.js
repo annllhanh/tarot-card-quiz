@@ -110,12 +110,14 @@ async function savePNG() {
   
   try {
     btn.innerHTML = '<span>Rendering...</span>';
+    el.style.background = 'linear-gradient(to bottom, #050a1a 0%, #15103a 35%, #2d114f 60%, #4a1352 80%, #631853 100%)';
     const canvas = await html2canvas(el, {
-      backgroundColor: '#070b1a',
+      backgroundColor: null,
       scale: 2,
       useCORS: true,
       logging: false
     });
+    el.style.background = '';
     
     // Convert canvas to blob
     canvas.toBlob(async (blob) => {
