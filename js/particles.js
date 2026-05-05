@@ -16,18 +16,18 @@ export function initParticles() {
 
   function createParticles() {
     particles = [];
-    const count = Math.floor((w * h) / 8000);
+    const count = Math.floor((w * h) / 1200); // Much denser night sky
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * w,
         y: Math.random() * h,
-        r: Math.random() * 1.5 + 0.3,
-        dx: (Math.random() - 0.5) * 0.15,
-        dy: (Math.random() - 0.5) * 0.1,
-        opacity: Math.random() * 0.6 + 0.2,
+        r: Math.random() * 1.0 + 0.2, // Tiny stars
+        dx: (Math.random() - 0.5) * 0.1,
+        dy: (Math.random() - 0.5) * 0.05,
+        opacity: Math.random() * 0.7 + 0.1,
         twinkleSpeed: Math.random() * 0.01 + 0.003,
         phase: Math.random() * Math.PI * 2,
-        color: Math.random() > 0.7 ? 'rgba(200,164,92,' : 'rgba(200,200,220,'
+        color: Math.random() > 0.85 ? 'rgba(255, 230, 180,' : 'rgba(235, 245, 255,'
       });
     }
   }
