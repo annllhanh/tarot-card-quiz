@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Tarot Card Are You? Discover Your Card</title>
+  <meta name="description" content="Take a mystical quiz to discover which tarot card best aligns with your energy. Find your place on The Fool's Journey." />
+  <meta property="og:title" content="Which Tarot Card Are You?" />
+  <meta property="og:description" content="Discover the tarot card that resonates with your soul." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <!-- Asymmetrical mystical lines & Background Elements -->
+  <div class="mystical-lines" aria-hidden="true">
+    <svg class="mystic-line ml-1" viewBox="0 0 200 600" preserveAspectRatio="none"><path d="M 20 0 Q 80 150, 30 300 T 60 600" stroke="rgba(232,224,208,0.8)" stroke-width="0.2" fill="none"/></svg>
+    <svg class="mystic-line ml-2" viewBox="0 0 200 800" preserveAspectRatio="none"><path d="M 180 0 Q 40 200, 150 400 T 80 800" stroke="rgba(232,224,208,0.8)" stroke-width="0.2" fill="none"/></svg>
+    <svg class="mystic-line ml-3" viewBox="0 0 100 500" preserveAspectRatio="none"><path d="M 10 0 Q 90 100, 20 250 T 70 500" stroke="rgba(200,164,92,0.8)" stroke-width="0.2" fill="none"/></svg>
+    <svg class="mystic-line ml-4" viewBox="0 0 150 700" preserveAspectRatio="none"><path d="M 140 0 Q 10 180, 130 350 T 30 700" stroke="rgba(232,224,208,0.8)" stroke-width="0.2" fill="none"/></svg>
+    
+    <!-- New White Elements (80% opacity) -->
+    <!-- Star Map -->
+    <svg class="bg-element star-map" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+      <g stroke="rgba(255, 255, 255, 0.8)" stroke-width="0.2" fill="none">
+        <circle cx="150" cy="100" r="1.5" fill="rgba(255, 255, 255, 0.8)"/>
+        <circle cx="200" cy="80" r="2" fill="rgba(255, 255, 255, 0.8)"/>
+        <circle cx="180" cy="150" r="1" fill="rgba(255, 255, 255, 0.8)"/>
+        <line x1="150" y1="100" x2="200" y2="80"/>
+        <line x1="200" y1="80" x2="180" y2="150"/>
+        <line x1="180" y1="150" x2="150" y2="100"/>
+        <circle cx="650" cy="400" r="2" fill="rgba(255, 255, 255, 0.8)"/>
+        <circle cx="700" cy="350" r="1" fill="rgba(255, 255, 255, 0.8)"/>
+        <circle cx="750" cy="450" r="1.5" fill="rgba(255, 255, 255, 0.8)"/>
+        <line x1="650" y1="400" x2="700" y2="350"/>
+        <line x1="700" y1="350" x2="750" y2="450"/>
+      </g>
+    </svg>
+    <!-- 3D Planet Lineart -->
+    <svg class="bg-element planet" viewBox="0 0 200 200">
+      <g stroke="rgba(255, 255, 255, 0.8)" stroke-width="0.2" fill="none">
+        <circle cx="100" cy="100" r="40"/>
+        <ellipse cx="100" cy="100" rx="60" ry="15" transform="rotate(-20 100 100)"/>
+        <ellipse cx="100" cy="100" rx="60" ry="5" transform="rotate(-20 100 100)"/>
+      </g>
+    </svg>
+    <!-- Wavy Lines (Hair Vibe) -->
+    <svg class="bg-element wavy-line" viewBox="0 0 1000 200" preserveAspectRatio="none">
+      <g stroke="rgba(255, 255, 255, 0.8)" stroke-width="0.2" fill="none">
+        <path d="M 0 100 Q 250 0, 500 100 T 1000 100"/>
+        <path d="M 0 105 Q 240 10, 490 105 T 1000 105"/>
+        <path d="M 0 110 Q 260 -10, 510 110 T 1000 110"/>
+        <path d="M 0 95 Q 230 -5, 480 95 T 1000 95"/>
+        <path d="M 0 90 Q 270 5, 520 90 T 1000 90"/>
+      </g>
+    </svg>
+    <svg class="bg-element wavy-line-2" viewBox="0 0 1000 200" preserveAspectRatio="none">
+      <g stroke="rgba(255, 255, 255, 0.8)" stroke-width="0.2" fill="none">
+        <path d="M 0 50 Q 300 150, 600 50 T 1000 100"/>
+        <path d="M 0 55 Q 310 140, 610 55 T 1000 105"/>
+        <path d="M 0 45 Q 290 160, 590 45 T 1000 95"/>
+        <path d="M 0 60 Q 320 130, 620 60 T 1000 110"/>
+      </g>
+    </svg>
+    <!-- 4-Point Stars Highlights -->
+    <svg class="bg-element star-4pt s1" viewBox="0 0 50 50"><path d="M25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0" fill="rgba(255,255,255,0.8)"/></svg>
+    <svg class="bg-element star-4pt s2" viewBox="0 0 50 50"><path d="M25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0" fill="rgba(255,255,255,0.8)"/></svg>
+    <svg class="bg-element star-4pt s3" viewBox="0 0 50 50"><path d="M25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0" fill="rgba(255,255,255,0.8)"/></svg>
+    <svg class="bg-element star-4pt s4" viewBox="0 0 50 50"><path d="M25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0" fill="rgba(255,255,255,0.8)"/></svg>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <a href="#home" class="nav-logo">✦ Tarot Quiz</a>
+    <div class="nav-links">
+      <a href="#home" class="nav-link" data-view="home">Home</a>
+      <a href="#quiz" class="nav-link" data-view="quiz">Quiz</a>
+      <a href="#library" class="nav-link" data-view="library">Library</a>
+    </div>
+  </nav>
+
+  <main id="app">
+    <!-- LANDING VIEW -->
+    <section id="view-home" class="view active">
+      <div class="hero">
+        <div class="sacred-geometry-hero" id="hero-geometry"></div>
+        <h1 class="hero-title">
+          <span class="title-accent">Which Tarot Card</span>
+          <span class="title-main">Are You?</span>
+        </h1>
+        <p class="hero-subtitle">The tarot is a mirror, not a fortune teller. Each of the 78 cards captures a distinct energy, a specific moment on the soul's journey from innocence to wholeness. This quiz reads your current inner landscape, your values, your outlook, and the tensions you carry right now, then reflects back the archetype that resonates most deeply with where you stand today.</p>
+        <p class="hero-purpose">Whether you seek self-understanding or want a professional reader to catch your energy before a session, this is your starting point.</p>
+        <button id="btn-start-quiz" class="btn-primary" onclick="window.location.hash='quiz'">
+          <span class="btn-glow"></span>
+          <span class="btn-text">Begin Your Journey</span>
+        </button>
+        <p class="hero-note">✦ For alignment · Find your light · For a peace of mind ✦</p>
+      </div>
+    </section>
+
+    <!-- QUIZ VIEW -->
+    <section id="view-quiz" class="view">
+      <div class="quiz-container">
+        <div class="quiz-progress">
+          <div class="progress-track" id="progress-track">
+            <div class="progress-star progress-start">✦</div>
+            <div class="progress-line"><div class="progress-fill" id="progress-fill"></div></div>
+            <div class="progress-star progress-end" id="progress-end">✦</div>
+          </div>
+          <span class="progress-text" id="progress-text">1 / 24</span>
+        </div>
+        <div class="quiz-card" id="quiz-card">
+          <p class="quiz-question" id="quiz-question"></p>
+          <div class="quiz-answers" id="quiz-answers"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT VIEW -->
+    <section id="view-result" class="view">
+      <div class="result-container">
+        <div class="result-reveal" id="result-reveal">
+          <div class="result-card-wrapper">
+            <div id="result-export-area" class="result-export-area">
+              <div class="result-card" id="result-card">
+                <div class="card-direction" id="card-direction"></div>
+                <div class="card-symbol-large" id="card-symbol-large"></div>
+                <h2 class="card-name" id="card-name"></h2>
+                <p class="card-suit" id="card-suit"></p>
+                <p class="card-essence" id="card-essence"></p>
+                <p class="card-advice-brief" id="card-advice-brief"></p>
+                <div class="card-brand">✦ tarotquiz.app</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <button class="btn-secondary" id="btn-save-png">
+              <span>⬇ Save as PNG</span>
+            </button>
+            <button class="btn-secondary" id="btn-share">
+              <span>⬆ Share Result</span>
+            </button>
+          </div>
+        </div>
+        <div class="result-detail" id="result-detail">
+          <h3 class="detail-heading">Your Reading</h3>
+          <div class="detail-section">
+            <div id="detail-keywords" class="keyword-tags"></div>
+          </div>
+          <div class="detail-narrative" id="detail-narrative">
+            <p id="detail-position" class="narrative-para"></p>
+            <p id="detail-correspondences" class="narrative-para"></p>
+            <p id="detail-journey" class="narrative-para"></p>
+            <p id="detail-self" class="narrative-para"></p>
+            <p id="detail-outlook" class="narrative-para"></p>
+          </div>
+          <div class="detail-section detail-section-highlight">
+            <p id="detail-meaning" class="narrative-para"></p>
+          </div>
+          <div class="detail-section detail-section-highlight detail-advice">
+            <h4 class="advice-heading" id="advice-heading">So what does this mean for you?</h4>
+            <p id="detail-advice" class="narrative-para"></p>
+          </div>
+          <button class="btn-primary" onclick="window.location.hash='library'">
+            <span class="btn-glow"></span>
+            <span class="btn-text">Explore All Cards</span>
+          </button>
+          <button class="btn-outline" onclick="window.location.hash='quiz'">Take Quiz Again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIBRARY VIEW -->
+    <section id="view-library" class="view">
+      <div class="library-container">
+        <h2 class="library-title">The Arcana Library</h2>
+        <p class="library-subtitle">Explore all 78 tarot cards and read more about the journey of The Fool</p>
+        <div class="library-filters" id="library-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="major">Major Arcana</button>
+          <button class="filter-btn" data-filter="wands">Wands</button>
+          <button class="filter-btn" data-filter="cups">Cups</button>
+          <button class="filter-btn" data-filter="swords">Swords</button>
+          <button class="filter-btn" data-filter="pentacles">Pentacles</button>
+        </div>
+        <div class="library-grid" id="library-grid"></div>
+      </div>
+      <!-- Modal -->
+      <div class="modal-overlay" id="card-modal">
+        <div class="modal-content">
+          <button class="modal-close" id="modal-close">✕</button>
+          <div class="modal-symbol" id="modal-symbol"></div>
+          <h3 class="modal-card-name" id="modal-card-name"></h3>
+          <p class="modal-card-suit" id="modal-card-suit"></p>
+          <div class="modal-meta" id="modal-meta"></div>
+          <div class="modal-body" id="modal-body">
+            <div class="modal-section">
+              <div id="modal-keywords" class="keyword-tags"></div>
+            </div>
+            <div class="modal-narrative" id="modal-narrative"></div>
+            <div class="modal-positions">
+              <div class="modal-position">
+                <h4 class="position-heading upright-heading">✦ When Upright</h4>
+                <p id="modal-upright" class="narrative-para"></p>
+              </div>
+              <div class="modal-position">
+                <h4 class="position-heading reversed-heading">✦ When Reversed</h4>
+                <p id="modal-reversed" class="narrative-para"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+      <p>✦ annllhanh &copy; 2026 ✦</p>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

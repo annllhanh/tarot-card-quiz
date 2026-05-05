@@ -1,0 +1,7 @@
+node_modules/
+*.png
+*.jpg
+*.jpeg
+Claude.md
+.DS_Store
+Thumbs.db

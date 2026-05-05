@@ -1,0 +1,138 @@
+/* ═══════════════════════════════════════════
+   TAROT QUIZ — ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+/* --- Floating --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* --- Slow Rotation --- */
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Button Shine --- */
+@keyframes btn-shine {
+  0% { left: -100%; }
+  30%, 100% { left: 200%; }
+}
+
+/* --- Fade In --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Scale In --- */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- Card Reveal --- */
+@keyframes card-reveal {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg) scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(15deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+/* --- Pulse Glow --- */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px var(--glow-gold); }
+  50% { box-shadow: 0 0 40px var(--glow-gold), 0 0 60px rgba(200,164,92,0.15); }
+}
+
+/* --- Slide Up --- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Slide In Right --- */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* --- Star Twinkle --- */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* --- Orbit Ring --- */
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Sacred Geometry Draw --- */
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+/* --- Mystical Line Drift --- */
+@keyframes mystical-drift {
+  0% { transform: translateY(0) translateX(0); opacity: 0.6; }
+  25% { transform: translateY(-3vh) translateX(8px); opacity: 1; }
+  50% { transform: translateY(2vh) translateX(-5px); opacity: 0.4; }
+  75% { transform: translateY(-5vh) translateX(12px); opacity: 0.8; }
+  100% { transform: translateY(0) translateX(0); opacity: 0.6; }
+}
+
+/* --- View Transitions --- */
+.view-enter {
+  animation: fadeIn 0.5s ease, slideUp 0.5s ease;
+}
+
+/* --- Hero geometry children --- */
+.sacred-geometry-hero svg {
+  animation: rotate-slow 25s linear infinite;
+}
+
+/* --- Library card stagger --- */
+.library-card {
+  animation: slideUp 0.4s ease backwards;
+}
+
+.library-card:nth-child(1) { animation-delay: 0.02s; }
+.library-card:nth-child(2) { animation-delay: 0.04s; }
+.library-card:nth-child(3) { animation-delay: 0.06s; }
+.library-card:nth-child(4) { animation-delay: 0.08s; }
+.library-card:nth-child(5) { animation-delay: 0.1s; }
+.library-card:nth-child(6) { animation-delay: 0.12s; }
+.library-card:nth-child(7) { animation-delay: 0.14s; }
+.library-card:nth-child(8) { animation-delay: 0.16s; }
+.library-card:nth-child(9) { animation-delay: 0.18s; }
+.library-card:nth-child(10) { animation-delay: 0.2s; }
+
+/* --- Result detail stagger --- */
+.result-detail .detail-section { animation: slideUp 0.5s ease backwards; }
+.result-detail .detail-section:nth-child(2) { animation-delay: 0.15s; }
+.result-detail .detail-section:nth-child(3) { animation-delay: 0.25s; }
+.result-detail .detail-section:nth-child(4) { animation-delay: 0.35s; }
+.result-detail .detail-section:nth-child(5) { animation-delay: 0.45s; }
+.result-detail .detail-section:nth-child(6) { animation-delay: 0.55s; }
+.result-detail .detail-section:nth-child(7) { animation-delay: 0.65s; }
+.result-detail .detail-section:nth-child(8) { animation-delay: 0.75s; }
+.result-detail .detail-section:nth-child(9) { animation-delay: 0.85s; }
+
+/* --- Reverse card indicator --- */
+.card-direction.reversed {
+  background: rgba(120, 60, 60, 0.2);
+  border-color: rgba(180, 100, 100, 0.3);
+  color: #d4a0a0;
+}
