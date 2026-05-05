@@ -22,8 +22,8 @@
 
   /* Text */
   --text-primary: #e8e0d0;
-  --text-secondary: #a09880;
-  --text-muted: #6a6050;
+  --text-secondary: #d4ccb8;
+  --text-muted: #b8b0cc;
   --text-glow: #f0e0c0;
 
   /* Effects */
@@ -68,8 +68,10 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-deep);
+  background: linear-gradient(to bottom, #050a1a 0%, #15103a 35%, #2d114f 60%, #4a1352 80%, #631853 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
