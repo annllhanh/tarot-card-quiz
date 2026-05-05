@@ -100,32 +100,72 @@ export function showResult(card, isReversed) {
 
 async function savePNG() {
   const el = document.getElementById('result-export-area');
+  const btn = document.getElementById('btn-save-png');
+  const originalText = btn.innerHTML;
+  
   if (!el || typeof html2canvas === 'undefined') {
     alert('Unable to export. Please try again.');
     return;
   }
+  
   try {
+    btn.innerHTML = '<span>Rendering...</span>';
     const canvas = await html2canvas(el, {
       backgroundColor: '#070b1a',
       scale: 2,
       useCORS: true,
       logging: false
     });
-    const link = document.createElement('a');
-    link.download = `tarot-${currentCard.name.toLowerCase().replace(/\s+/g, '-')}.png`;
-    link.href = canvas.toDataURL('image/png');
-    link.click();
+    
+    // Convert canvas to blob
+    canvas.toBlob(async (blob) => {
+      const fileName = `tarot-${currentCard.name.toLowerCase().replace(/\s+/g, '-')}.png`;
+      const file = new File([blob], fileName, { type: 'image/png' });
+
+      // Try Native Mobile Share/Save (Foolproof for iOS/Android)
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({
+            files: [file],
+            title: 'My Tarot Result',
+            text: 'I got my Tarot reading!'
+          });
+          btn.innerHTML = '<span>✓ Saved!</span>';
+        } catch (err) {
+          // User cancelled or share failed, fallback to download
+          triggerDownload(canvas.toDataURL('image/png'), fileName);
+          btn.innerHTML = '<span>✓ Downloaded!</span>';
+        }
+      } else {
+        // Desktop fallback
+        triggerDownload(canvas.toDataURL('image/png'), fileName);
+        btn.innerHTML = '<span>✓ Downloaded!</span>';
+      }
+      
+      setTimeout(() => btn.innerHTML = originalText, 2000);
+    }, 'image/png');
+
   } catch (e) {
     console.error('Export error:', e);
     alert('Export failed. Please try again.');
+    btn.innerHTML = originalText;
   }
+}
+
+function triggerDownload(dataUrl, fileName) {
+  const link = document.createElement('a');
+  link.download = fileName;
+  link.href = dataUrl;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 async function shareResult() {
   const dir = currentReversed ? 'Reversed' : 'Upright';
   const brief = currentCard[currentReversed ? 'reversed' : 'upright'].brief;
   const text = `I got "${currentCard.name}" (${dir}) on the Tarot Quiz! ${brief}`;
-  const url = window.location.href.split('#')[0] + '#library';
+  const url = window.location.href.split('#')[0];
 
   if (navigator.share) {
     try {
