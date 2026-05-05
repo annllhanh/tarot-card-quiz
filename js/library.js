@@ -38,9 +38,15 @@ function renderGrid() {
     symbolDiv.className = 'card-symbol';
     symbolDiv.appendChild(createSymbolSVG(card));
 
+    let displayName = card.name;
+    if (card.suit === 'major') {
+      const roman = ['0', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI'];
+      displayName = `${roman[card.num]}. ${card.name}`;
+    }
+
     const nameDiv = document.createElement('div');
     nameDiv.className = 'library-card-name';
-    nameDiv.textContent = card.name;
+    nameDiv.textContent = displayName;
 
     const suitDiv = document.createElement('div');
     suitDiv.className = 'library-card-suit';
@@ -61,7 +67,12 @@ function openModal(card) {
   symbolEl.appendChild(createSymbolSVG(card));
 
   // Name and suit
-  document.getElementById('modal-card-name').textContent = card.name;
+  let displayName = card.name;
+  if (card.suit === 'major') {
+    const roman = ['0', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI'];
+    displayName = `${roman[card.num]}. ${card.name}`;
+  }
+  document.getElementById('modal-card-name').textContent = displayName;
   const suitLabel = card.suit === 'major' ? 'Major Arcana' :
     card.suit.charAt(0).toUpperCase() + card.suit.slice(1) + ' · Minor Arcana';
   document.getElementById('modal-card-suit').textContent = suitLabel;
