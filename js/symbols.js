@@ -107,7 +107,7 @@ export function createSymbolSVG(card) {
   const cx = 50, cy = 50;
 
   // Background glow
-  const glow = svgEl('circle', { cx, cy, r: 42, fill: `url(#glow-${card.id})`, opacity: '0.15' });
+  const glow = svgEl('circle', { cx, cy, r: 42, fill: `url(#glow-${card.id})`, opacity: '0.4' });
   const defs = svgEl('defs');
   const grad = svgEl('radialGradient', { id: `glow-${card.id}` });
   const s1 = svgEl('stop', { offset: '0%', 'stop-color': c.primary });
