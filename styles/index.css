@@ -27,7 +27,7 @@
   --text-glow: #f0e0c0;
 
   /* Effects */
-  --glow-gold: rgba(200, 164, 92, 0.4);
+  --glow-gold: rgba(200, 164, 92, 0.7);
   --glow-blue: rgba(26, 58, 107, 0.4);
   --glow-purple: rgba(74, 45, 122, 0.3);
   --shadow-deep: 0 8px 32px rgba(0, 0, 0, 0.6);

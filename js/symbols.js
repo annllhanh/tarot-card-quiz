@@ -34,40 +34,40 @@ function star(cx, cy, outerR, innerR, points, rotation = 0) {
 // Base shape generators
 const shapes = {
   circle: (svg, cx, cy, r, color) => {
-    svg.appendChild(svgEl('circle', { cx, cy, r, fill: 'none', stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('circle', { cx, cy, r, fill: 'none', stroke: color, 'stroke-width': '2.5' }));
   },
   dottedCircle: (svg, cx, cy, r, color, dots = 12) => {
     for (let i = 0; i < dots; i++) {
       const p = polarToXY(cx, cy, r, (360 / dots) * i);
-      svg.appendChild(svgEl('circle', { cx: p.x, cy: p.y, r: 2, fill: color, opacity: '0.7' }));
+      svg.appendChild(svgEl('circle', { cx: p.x, cy: p.y, r: 2.5, fill: color, opacity: '0.9' }));
     }
   },
   polygon: (svg, cx, cy, r, sides, color, rotation = 0) => {
-    svg.appendChild(svgEl('polygon', { points: polygon(cx, cy, r, sides, rotation), fill: 'none', stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('polygon', { points: polygon(cx, cy, r, sides, rotation), fill: 'none', stroke: color, 'stroke-width': '2.5' }));
   },
   star: (svg, cx, cy, outerR, innerR, points, color, rotation = 0) => {
-    svg.appendChild(svgEl('polygon', { points: star(cx, cy, outerR, innerR, points, rotation), fill: 'none', stroke: color, 'stroke-width': '1.2' }));
+    svg.appendChild(svgEl('polygon', { points: star(cx, cy, outerR, innerR, points, rotation), fill: 'none', stroke: color, 'stroke-width': '2.0' }));
   },
   rays: (svg, cx, cy, innerR, outerR, count, color) => {
     for (let i = 0; i < count; i++) {
       const a = (360 / count) * i;
       const p1 = polarToXY(cx, cy, innerR, a);
       const p2 = polarToXY(cx, cy, outerR, a);
-      svg.appendChild(svgEl('line', { x1: p1.x, y1: p1.y, x2: p2.x, y2: p2.y, stroke: color, 'stroke-width': '1', opacity: '0.5' }));
+      svg.appendChild(svgEl('line', { x1: p1.x, y1: p1.y, x2: p2.x, y2: p2.y, stroke: color, 'stroke-width': '1.5', opacity: '0.7' }));
     }
   },
   crescent: (svg, cx, cy, r, color, side = 'right') => {
     const offset = side === 'right' ? r * 0.35 : -r * 0.35;
     const d = `M ${cx} ${cy - r} A ${r} ${r} 0 1 ${side === 'right' ? 1 : 0} ${cx} ${cy + r} A ${r * 0.75} ${r * 0.75} 0 1 ${side === 'right' ? 0 : 1} ${cx} ${cy - r}`;
-    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '2.5' }));
   },
   diamond: (svg, cx, cy, w, h, color) => {
     const pts = `${cx},${cy - h} ${cx + w},${cy} ${cx},${cy + h} ${cx - w},${cy}`;
-    svg.appendChild(svgEl('polygon', { points: pts, fill: 'none', stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('polygon', { points: pts, fill: 'none', stroke: color, 'stroke-width': '2.5' }));
   },
   cross: (svg, cx, cy, size, color) => {
-    svg.appendChild(svgEl('line', { x1: cx, y1: cy - size, x2: cx, y2: cy + size, stroke: color, 'stroke-width': '1.5' }));
-    svg.appendChild(svgEl('line', { x1: cx - size, y1: cy, x2: cx + size, y2: cy, stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('line', { x1: cx, y1: cy - size, x2: cx, y2: cy + size, stroke: color, 'stroke-width': '2.5' }));
+    svg.appendChild(svgEl('line', { x1: cx - size, y1: cy, x2: cx + size, y2: cy, stroke: color, 'stroke-width': '2.5' }));
   },
   spiral: (svg, cx, cy, maxR, turns, color) => {
     let d = `M ${cx} ${cy}`;
@@ -80,14 +80,14 @@ const shapes = {
       const y = cy + r * Math.sin(angle);
       d += ` L ${x} ${y}`;
     }
-    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '1.2' }));
+    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '2.0' }));
   },
   dot: (svg, cx, cy, r, color) => {
-    svg.appendChild(svgEl('circle', { cx, cy, r, fill: color }));
+    svg.appendChild(svgEl('circle', { cx, cy, r: r * 1.5, fill: color }));
   },
   infinity: (svg, cx, cy, w, h, color) => {
     const d = `M ${cx} ${cy} C ${cx + w} ${cy - h}, ${cx + w} ${cy + h}, ${cx} ${cy} C ${cx - w} ${cy + h}, ${cx - w} ${cy - h}, ${cx} ${cy}`;
-    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '1.5' }));
+    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '2.5' }));
   },
   wave: (svg, cx, cy, w, amp, color) => {
     let d = `M ${cx - w} ${cy}`;
@@ -95,7 +95,7 @@ const shapes = {
       const y = cy + Math.sin((x / w) * Math.PI * 2) * amp;
       d += ` L ${cx + x} ${y}`;
     }
-    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '1.2' }));
+    svg.appendChild(svgEl('path', { d, fill: 'none', stroke: color, 'stroke-width': '2.0' }));
   }
 };
 
@@ -107,7 +107,7 @@ export function createSymbolSVG(card) {
   const cx = 50, cy = 50;
 
   // Background glow
-  const glow = svgEl('circle', { cx, cy, r: 42, fill: `url(#glow-${card.id})`, opacity: '0.4' });
+  const glow = svgEl('circle', { cx, cy, r: 42, fill: `url(#glow-${card.id})`, opacity: '0.7' });
   const defs = svgEl('defs');
   const grad = svgEl('radialGradient', { id: `glow-${card.id}` });
   const s1 = svgEl('stop', { offset: '0%', 'stop-color': c.primary });
@@ -162,12 +162,12 @@ export function createSymbolSVG(card) {
         break;
       }
       case 'orbitalRing': {
-        const ellipse = svgEl('ellipse', { cx, cy, rx: 38, ry: 14, fill: 'none', stroke: c.secondary, 'stroke-width': '1', transform: `rotate(${sym.orbAngle || 30} ${cx} ${cy})`, opacity: '0.5' });
+        const ellipse = svgEl('ellipse', { cx, cy, rx: 38, ry: 14, fill: 'none', stroke: c.secondary, 'stroke-width': '2', transform: `rotate(${sym.orbAngle || 30} ${cx} ${cy})`, opacity: '0.8' });
         svg.appendChild(ellipse);
         break;
       }
       case 'orbitalRing2': {
-        const ellipse2 = svgEl('ellipse', { cx, cy, rx: 38, ry: 14, fill: 'none', stroke: c.accent || c.secondary, 'stroke-width': '1', transform: `rotate(${sym.orbAngle2 || -30} ${cx} ${cy})`, opacity: '0.4' });
+        const ellipse2 = svgEl('ellipse', { cx, cy, rx: 38, ry: 14, fill: 'none', stroke: c.accent || c.secondary, 'stroke-width': '2', transform: `rotate(${sym.orbAngle2 || -30} ${cx} ${cy})`, opacity: '0.7' });
         svg.appendChild(ellipse2);
         break;
       }
